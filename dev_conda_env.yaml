@@ -1,0 +1,11 @@
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.9
+- jupyterlab
+- sphinx
+- sphinx-book-theme
+- sphinxcontrib-bibtex
+- sphinx-copybutton
+- myst-nb
