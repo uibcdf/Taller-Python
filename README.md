@@ -1,2 +1,2 @@
 # Taller Python
-Taller de introducción a la programación en Python
+Taller de introducción a la programación en Python.
