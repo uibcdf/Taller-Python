@@ -23,7 +23,7 @@ Salud - Hospital Infantil de México Federico Gómez](quienes\_somos.md).
 
 
 ```{important} 
-El siguiente ciclo 2023.2 comenzará el próximo 8 de mayo!    
+La siguiente edición 2023.2 comenzará el próximo 8 de mayo!    
 Las sesiones de videoconferencia se llevarán a cabo los lunes de las 4:30 pm a las 6:00 pm (hora de Ciudad de México).
 ```
 
@@ -36,7 +36,7 @@ En construcción...
 Para registrate a este taller rellena [este formulario](https://forms.gle/2dEKEvCtLukoXhEo7).
 
 ```{warning} 
-La realización de estos talleres no implica la obtención de una constancia de participación.
+La realización de estos talleres no conlleva la obtención de una constancia de participación.
 ```
 
 ## Otros talleres
