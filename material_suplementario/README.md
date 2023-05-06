@@ -1,2 +1,3 @@
-# Patata
-alñsdfkjlñasdkjsa
+# Cómo trabajar con este taller
+
+En construcción...

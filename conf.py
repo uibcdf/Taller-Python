@@ -5,14 +5,19 @@
 
 import os
 import sys
-__version__='0.0.0'
+__version__='2023.2'
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Taller de introducción a Linux'
-copyright = '2023, UIBCDF Lab at the Mexico City Childrens Hospital Federico Gomez and authors.'
-author = 'Liliana M. Moreno Vargas & Diego Prada Gracia'
+project = 'UIBCDF - Taller de Python'
+copyright = ''
+author = """
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+"""
 
 version = __version__.split('+')[0]
 release = __version__
@@ -35,14 +40,17 @@ extensions = [
 #    'sphinxcontrib.bibtex',
     'sphinx.ext.extlinks',
     'sphinx_copybutton',
-    'myst_nb'
+    'sphinx_design',
+    'sphinx_favicon',
+    'myst_nb',
 ]
 
 # Myst extensions and options
 
 myst_enable_extensions = [
     'dollarmath',
-    'amsmath'
+    'amsmath',
+    'colon_fence'
 ]
 
 myst_heading_anchors = 3
@@ -96,15 +104,24 @@ pygments_style = 'default'
 html_theme = 'sphinx_book_theme'
 #html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
+            "logo": {"alt_text": "UIBCDF-Talleres"},
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = []
 
+html_static_path = ['_static']
+html_logo = "_static/LogoUIBCDF_vectorizado.svg"
+
+favicons = ["favicon-16x16.png",
+            "favicon-124x124.png",
+            "favicon-128x128.png",
+            "favicon-192x192.png",
+            "icon.svg"]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
 
 # Custom css
 
