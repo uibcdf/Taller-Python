@@ -9,13 +9,15 @@ para llevar acabo el taller.
    :maxdepth: 1
    :hidden:
 
+   binder.md
    conda.md
    git.md
    github.md
+   google_colab.md
    ipython.md
    jupyter.md
-   notebook.md
    markdown.md
+   notebook.md
 
 ```
 
