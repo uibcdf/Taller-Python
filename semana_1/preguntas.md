@@ -1,12 +1,11 @@
 # Preguntas de la semana
 
-A continuación encontrarás una seríe de preguntas y cuestiones que tienes que responder sobre este
-mismo documento. No éxactamente sobre este, sino editando el documento
-'Taller-Linux/semana\_1/preguntas.md' que encontrarás en tu fork (y en la copia local de tu fork).
-
-Una vez que hayas añadido las respuestas, si lo hiciste -como sugerimos- en la copia local de tu
-repositorio fork, empújalas con al repositorio remoto de tu fork para que podamos ver que
-conseguiste llevar a cabo esta tarea.
+A continuación encontrarás una seríe de cuestiones que debes responder en un
+documento Markdown llamado 'mis_respuestas.md' y que deberás ubicar en el mismo directorio que la
+fuente de esta página en tu fork del repositorio del taller. En [la sección "Resolviendo las
+preguntas semanales" de la página "Cómo trabajar con este
+taller"](../material_suplementario/como_trabajar.md#resolviendo-las-preguntas-semanales) encontrarás indicaciones sobre
+cómo hacerlo.
 
 ## Pregunta 1
 
