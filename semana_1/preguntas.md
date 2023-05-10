@@ -42,8 +42,8 @@ Responde aquí con no más de 6 lineas de texto.
 
 ## Pregunta 5
 
-> ¿Qué es Alfaphold? ¿Si quisieras ver las tripas de su código y aprender cómo está construido... o si
-> tuvieras una idea para modificar y mejorar Alfaphold... podrías hacerlo? ¿Cómo?
+> ¿Qué es AlphaFold? ¿Si quisieras ver las tripas de su código y aprender cómo está construido... o si
+> tuvieras una idea para modificar y mejorar AlphaFold... podrías hacerlo? ¿Cómo?
 
 ### Respuesta
 
