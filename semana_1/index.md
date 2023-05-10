@@ -7,7 +7,7 @@
    :maxdepth: 1
 
    contenido.md
-   reto.ipynb
+   reto.md
    preguntas.md
    recursos_adicionales.md
 

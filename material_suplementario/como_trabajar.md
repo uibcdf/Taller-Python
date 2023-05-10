@@ -9,7 +9,11 @@ El propósito de tener este taller en un repositorio público en GitHub es múlt
 - Cualquier persona puede tener acceso a él para su lectura.
 - Cualquier persona puede proponer cambios y contribuir a su desarrollo.
 - El repositorio se emplea al mismo tiempo para servir en internet la web de este taller.
+<<<<<<< HEAD
 - El repositorio permite que lo puedas copiar, editar y publicar tus cambios.
+=======
+- El repositorio permite que lo puedas copiar y editar, y publicar tus cambios.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 - El repositorio es además foro de discusión y punto de encuentro para compartir dudas, problemas y soluciones.
 
 De esta manera, el mismo repositorio es una herramienta muy útil no sólo como
@@ -17,14 +21,23 @@ vehículo de información, sino elemento interactivo para que los participantes
 hagan sus pruebas, comuniquen sus dudas y problemas o contribuyan a mejorarlo.
 
 Dado que todos los contenidos del repositorio se encuentran compartidos bajo
+<<<<<<< HEAD
 los términos de la licencia internacional [Creative Commons BY-NC-SA 4.0](
 Creative Commons BY-NC-SA 4.0), los autores permiten que cualquier persona los
+=======
+los términos de la licencia internacional [Creative Commons BY-NC-SA
+  4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES), los autores permiten que cualquier persona los
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 puedan copiar, distribuir, modificar y transformar libremente. Este tipo de
 licencia indica a quien ejerce "estas libertades" que debe siempre respetar el
 reconocimiento de la autoria de lo empleado, no puede usar el material con
 fines comerciales y todo producto derivado debe compartirse en los mismos
 términos. Y todo esto porque el vertiginoso desarrollo de las herramientas
+<<<<<<< HEAD
 computacionales abiertas primero (*Open Source*) y de los desarrollos
+=======
+computacionales abiertas primero (*Open Source*), y de los desarrollos
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 científicos que han adoptado mecanismos para asegurar que la ciencia sea
 abierta (*Open Science*) despues, reafirman a los responsables y autores de
 estos contenidos en que cooperar es más eficiente que competir a la hora de
@@ -45,7 +58,11 @@ clon de este repositorio? Al fin y al cabo, si este taller forma parte de una
 serie de talleres dedicada a la introducción de herramientas computacionales
 para el trabajo de investigación científica, resulta muy pertinente que pongas
 en práctica los principios de la ciencia abierta (*open science*) que
+<<<<<<< HEAD
 aprendimos del trabajo en código abierto (*open source*): para que demostrar
+=======
+aprendimos del trabajo en código abierto (*open source*): para demostrar
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 que lo comunicado y aprendido es reproducible, todo lo necesario para
 reproducirlo debe ser comunicado.
 
@@ -57,7 +74,11 @@ En primer lugar debes de crear tu propio usuario en GitHub. GitHub es un
 servicio gratuito... y si no lo conoces y quieres hacer trabajo científico
 computacional, te va a resultar de muchísima ayuda.
 
+<<<<<<< HEAD
 Encontrarás en esta página las instrucciones necesarias que debes seguir para crear tu usuario.
+=======
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones necesarias que debes seguir para crear tu usuario.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 ### Haz un fork de este repositorio
 
@@ -71,9 +92,15 @@ original que no ha perdido el cordón umbilicar con él. Esto permite que puedas
 editar y desarrollar tu propio proyecto con la posibilidad de actualizar en él
 los cambios que pueda haber en el proyecto original, o que de una manera muy
 "limpia" puedas proponer la incorporación de tus cambios al proyecto original
+<<<<<<< HEAD
 (convirtiendote a efectos de la licencia en coautor de el mismo).
 
 Encontrarás en esta página las instrucciones para hacer tu propio fork de este taller.
+=======
+(convirtíendote a efectos de la licencia en coautor del mismo).
+
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu propio fork de este taller.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 ### Haz tu primer clon de tu repositorio fork
 
@@ -82,6 +109,7 @@ este taller, haciendo uso de su web con el navegador de tu máquina. Pero esto
 resulta incómodo cuando vas a modificarlo y editarlo con frecuencia. ¿No sería
 buena idea disponer localmente de una copia de tu fork en tu máquina? De esta
 manera puedes editar un fichero en tu computadora y, cuando tu decidas, subir
+<<<<<<< HEAD
 los cambios a to copia de tu fork (la de la nube). A esto último se le conoce
 como "empujar" los cambios, o hacer un "*push*".
 
@@ -90,6 +118,16 @@ Encontrarás en esta página las instrucciones para hacer tu primer clon local d
 Pero, aunque ya con tu fork local ya puedas cómodamente seguir el desarrollo de
 este taller, no nos quedemos aquí. Imagina que terminaste de trabajar en tu
 proyecto y vas a continuar en horas desde otra máquina, en casa, por ejemplo.
+=======
+los cambios a la copia de tu fork (la de la nube). A esto último se le conoce
+como "empujar" los cambios, o hacer un "*push*".
+
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu primer clon local de tu repositorio.
+
+Pero, aunque ya con tu fork local puedas cómodamente seguir el desarrollo de
+este taller, no nos quedemos aquí. Imagina que terminaste de trabajar en tu
+proyecto y vas a continuar en unas horas desde otra máquina, en casa, por ejemplo.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 ¿No sería buena idea hacer otro clon local del mismo repositorio remoto en tu
 otra máquina? De esta manera, al llegar a casa descargas los cambios, haces un
 "*pull*" y continuas trabajando.
@@ -112,16 +150,28 @@ es tema de otro de los talleres de la UIBCDF.
 
 GitHub es un instrumento en la nube que nos permite desarrollar proyectos en
 colaboración, principalmente de software y herramientas computacionales pero no
+<<<<<<< HEAD
 únicamente. Para facilitar la comunicación entre los desarrolladores entre si y
 también con la comunidad a la que está dirigida el proyecto, se incluyeron en
 la plataforma lugares y mecanismos con los que interaccionar. Nos fijaremos
 especialmente en dos: el tablero de problemas (*Issues board*) y el foro de
 discusiones (*Discussions*). Los usaremos para centralizar las discusiones y la
+=======
+únicamente. Para facilitar la comunicación entre los desarrolladores y
+también con la comunidad a la que está dirigida el proyecto, se incluyeron en
+la plataforma lugares y mecanismos con los que interaccionar. Nos fijaremos
+especialmente en dos: [el tablero de problemas (*Issues board*)](https://github.com/uibcdf/Taller-Linux/issues) y [el foro de
+discusiones (*Discussions*)](https://github.com/uibcdf/Taller-Linux/discussions). Los usaremos para centralizar las discusiones y la
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 comunicación entre nosotros en este taller.
 
 ### El tablero de problemas
 
+<<<<<<< HEAD
 El tablero de problemas (*Issues board*) fue diseñado para poder compartir:
+=======
+[El tablero de problemas (*Issues board*)](https://github.com/uibcdf/Taller-Linux/issues) fue diseñado para poder compartir:
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 - Propuestas de cambios e implementaciones nuevas.
 - Discusiones de trabajo sobre aspectos específicos del proyecto.
@@ -132,17 +182,28 @@ El tablero de problemas (*Issues board*) fue diseñado para poder compartir:
 - desde un miembro del equipo de desarrollo con otros miembros del equipo.
 - desde cualquier usuario o miembro de la comunidad a la que va dirigido el
   proyecto al equipo de desarrollo.
+<<<<<<< HEAD
 - desde cualquier desarrollador cualquier a cualquier usuario o miembro de la
   comunidad que quiera interaccionar.
 - desde cualquier usuario o miembro de la comunidad concernida a otros usuarios
   oconcernida a otros usuarios o al resto de la comunidad.
+=======
+- desde cualquier desarrollador a cualquier usuario o miembro de la
+  comunidad que quiera interaccionar.
+- desde cualquier usuario o miembro de la comunidad a otros usuarios
+  o al resto de la comunidad.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 En el taller vamos a provechar esta infraestructura para hacer un uso no tan
 alejado de aquel para el que fue construida: interaccionar entre nosotros.
 
 Haremos uso del tablero de problemas para compartir discusiones y dudas de
 manera pública, así como para recibir comentarios y retroalimentación sobre
+<<<<<<< HEAD
 ellos. En esta página encontrarás información sobre cómo hacerlo.
+=======
+ellos. [En esta página](otras_herramientas/github.md) encontrarás información sobre cómo hacerlo.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 Como participante del taller, el tablero de problemas debe ser tu primera
 opción de contacto con el resto de participantes y con los responsables y/o
@@ -151,6 +212,7 @@ tutores. Úsala para comunicar tus problemas, dudas o propuestas.
 ### El foro de discusiones
 
 Otro área de interés para interaccionar con los usuarios y desarrolladores de
+<<<<<<< HEAD
 un proyecto es la web de discusiones (*Disscusions*). Usualmente esta
 herramientas se usa para centralizar conversaciones abiertas de caracter mas
 generales que aquellas registradas en el tablero de problemas.
@@ -160,6 +222,17 @@ interés general para los participantes, los desarrolladores de contenido y los
 tutores del taller.
 
 En esta página puedes encontrar indicaciones sobre cómo usar la web de discusiones.
+=======
+un proyecto es la [web de discusiones (*Disscusions*)](https://github.com/uibcdf/Taller-Linux/discussions). Usualmente esta
+herramienta se usa para centralizar conversaciones abiertas de caracter más
+general que aquellas registradas en el tablero de problemas.
+
+Usaremos el área, o foro, de discusiones para trasladar conversaciones de
+interés general para los participantes, los desarrolladores de contenido y los
+tutores del taller.
+
+[En esta página](otras_herramientas/github.md) puedes encontrar indicaciones sobre cómo usar la web de discusiones.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 Las discusiones que encontrarás en el taller son propuestas y moderadas por los
 responsables y/o tutores. Participa en ellas libremente respetando a los demás.
@@ -169,20 +242,33 @@ de problemas para comunicar la propuesta.
 ## El entorno de ejecución del repositorio y su material
 
 Este taller es un proyecto en colaboración, entre los desarrolladores y
+<<<<<<< HEAD
 responsables del contenido, y lo más importante, entre sus participantes. Para
+=======
+responsables del contenido, y lo más importante, entre sus participantes. Para que
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 dicha colaboración suceda de manera exitosa, debemos asegurar nó sólamente que
 el material es público y puede ser editado por cualquier, sino que cualquiera
 puede configurar el mismo entorno de trabajo para reproducirlo y modificarlo.
 
 Para que esto se entienda mejor haremos la siguiente analogía. Imagina que
 varios laboratorios científicos en el mundo que trabajan en un proyecto común,
+<<<<<<< HEAD
 o que símplemente trabajan sobre las mismas preguntas, necesitan compartir
 hayazgos y métodos de trabajo. ¿Será suficiente con compartir un documento con
+=======
+o que simplemente trabajan sobre las mismas preguntas, necesitan compartir
+hallazgos y métodos de trabajo. ¿Será suficiente con compartir un documento con
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 las observaciones y conclusiones hechas por unos investigadores, o un protocolo
 de realización de experimento? No es suficiente para asegurar la
 reproducibilidad de lo comunicado, es necesario también que las herramientas y
 el entorno para reproducir el experimento sea "el mismo". Quizá esto, en
+<<<<<<< HEAD
 términos de "ciencia experimental" sea muy dificil o imposible, la
+=======
+términos de "ciencia experimental" sea muy difícil o imposible, la
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 instrumentación será parecida pero no la misma, el equipo usado podrá ser del
 mismo fabricante y el mismo modelo, pero no el mismo, y las manos del
 investigador y las condiciones de laboratorio nunca serán exactamente iguales.
@@ -190,8 +276,13 @@ Pero a diferencia de la parte "experimental" de una investigación científica,
 con la parte "teórica" y/o "computacional" del proyecto científico sí podemos
 acercarnos a segurar la reproducibilidad de lo comunicado haciendo uso de las
 mismas herramientas y el mismo laboratorio. ¿Cómo? Proporcionando instrucciones
+<<<<<<< HEAD
 precisas de cómo armar el entorno de ejecución detallando las herramientas y la
 versión usada. Para eso, podemos usar gestores de ambientes de trabajo como Conda.
+=======
+precisas de cómo armar el entorno de ejecución, detallando las herramientas y la
+versión usada. Para eso, podemos usar gestores de ambientes de trabajo como [Conda](otras_herramientas/conda.md).
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 El repositorio contiene un fichero llamado "conda_env.yaml" con el que puedes
 configurar un entorno virtual de conda para usar las mismas herramientas que
@@ -200,7 +291,11 @@ a la configuración de tu sistema operativo y el conjunto de programas que usa.
 
 ### Conda
 
+<<<<<<< HEAD
 Antes de instalar Conda, si es la primera vez que oyes de este gestor de
+=======
+Antes de instalar [Conda](otras_herramientas/conda.md), si es la primera vez que oyes de este gestor de
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 ambientes de trabajo e instalación de paquetes, imagina la siguiente situación.
 Quieres reproducir un experimento computacional en tu computadora y ese
 experimento fue realizado haciendo uso de las siguientes herramientas:
@@ -219,11 +314,19 @@ te permite crear entornos de trabajo como si fueran burbujas en tu máquina en
 las que entrar, instalar herramientas, trabajar y salir de ellas sin afectar la
 configuración de tu sistema operativo y el resto de programas.
 
+<<<<<<< HEAD
 Encontrarás en esta página las instrucciones para instalar y trabajar con conda en tu equipo.
 
 ### Crea un ambiante para trabajar en el taller
 
 Cuando tengas instalado conda en tu máquina de trabajo, ya puedes crear un
+=======
+[Encontrarás en esta página](otras_herramientas/conda.md) las instrucciones para instalar y trabajar con Conda en tu equipo.
+
+### Crea un ambiente para trabajar en el taller
+
+Cuando tengas instalado Conda en tu máquina de trabajo, ya puedes crear un
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 ambiente para trabajar con este taller haciendo uso de las mismas herramientas
 que los desarrolladores y el resto de participantes. Para eso usarás el fichero
 "conda_env.yaml".
@@ -249,7 +352,11 @@ Y en el mismo directorio de tu clon local de este repositorio, ejecuta:
 make html
 ```
 
+<<<<<<< HEAD
 Verás que se creó un directorio nuevo llamado '\_build'. Allí puedes lanzar con
+=======
+Verás que se creó un directorio nuevo llamado '\_build'. Ahora puedes lanzar con
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 tu navegador la web principal de este taller de manera local. Por ejemplo, si
 usas Google Chrome y un sistema operativo Linux, puedes ejecutar en la
 terminal:
@@ -276,8 +383,13 @@ Uno de los lenguajes de marcado más populares para texto con formato es
 Markdown. Markdown nos permite de una manera muy económica y sencilla,
 especificar cómo será visualizado nuestro texto plano: en cursiva, con un
 encabezado de sección, con una tabla, un hiper-enlace, una imagen... Esta misma
+<<<<<<< HEAD
 página web que estás leyendo ahora mismo, tiene su contenido en un fichero de
 texto en "lenguaje" Markdown. Échale un vistazo en esta liga. Para modificar
+=======
+página web, tiene su contenido en un fichero de
+texto en "lenguaje" Markdown. Échale un vistazo en esta [liga](otras_herramientas/markdown.md). Para modificar
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 los contenidos de esta página sólo tenemos que abrir con cualquier editor de
 texto ese documento, que llamamos fuente (como si fuera la fuente de un
 lenguaje de programación) y editarlo.
@@ -289,28 +401,47 @@ distribución de contenidos. Es más barato compartir por la red un texto plano
 con instrucciones que un documento cuyo estilo y formato ya se encuentra
 codificado en código máquina en el mismo fichero.
 
+<<<<<<< HEAD
 En esta página encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
+=======
+[En esta página](otras_herramientas/markdown.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 ### Jupyter notebooks
 
 Los ficheros escritos en lenguaje Markdown están escritos únicamente para la visualización y lectura de sus contenidos.
 Si queremos compartir un documento en el que cualquiera puede encontrar, además de texto y recursos visuales,
 instrucciones de programación y el resultado de
+<<<<<<< HEAD
 ellas, el libreta Jupyter notebook o IPython notebook es uno de los instrumentos adecuados.
+=======
+ellas, la libreta Jupyter notebook o IPython notebook es uno de los instrumentos adecuados.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 
 Cuando los desarrolladores de herramientas computacionales de código libre y
 los científicos que hacían trabajo computacional querían compartir código de
 programación, o un experimento computacional, debían compartir por un lado el
+<<<<<<< HEAD
 código fuente y por otro las instrucciones y comentarios. Para despues, confiar
 y esperar en que el destinatario encontrara el mismo resultado y obtuviera, por
 ejemplo en el caso de un experimento científico, la misma representación de los
 datos producidos. Esto hacía no hacía el trabajo en colaboración fácil.
+=======
+código fuente y por otro las instrucciones y comentarios. Para después, confiar
+y esperar en que el destinatario encontrara el mismo resultado y obtuviera, por
+ejemplo en el caso de un experimento científico, la misma representación de los
+datos producidos. Esto no hacía el trabajo en colaboración fácil.
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 Acudiendo al ejemplo de la parte experimental de la investigación científica,
 en el ambito del laboratorio experimental los investigadores llevan siglos
 definiendo la cultura y las técnicas del oficio. Una de las herramientas más
 importantes que cualquiera debe manejar en este contexto es la bitácora de
 laboratorio. En ella los investigadores reportan todo lo acontecido y necesario
+<<<<<<< HEAD
 para poder reproducir un experimento, incluso incluyen las representaciones
+=======
+para poder reproducir un experimento, incluso agregan las representaciones
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 gráficas del resultado del experimento. Todo para intentar asegurar la
 reproducibilidad de lo observado. Ahora, si intentamos definir un conjunto de
 hábitos y herramientas para el buen desarrollo del trabajo computacional de
@@ -326,7 +457,12 @@ Dicho esto, Jupyter Lab y sus Jupyter notebooks son un entorno de trabajo y un
 formato de ficheros ideal para el trabajo computacional de investigación. Y por
 lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que manejarás en este taller.
 
+<<<<<<< HEAD
 En está página encontrarás indicaciones y más información sobre como usar
 Jupyter Lab para interaccionar con los notebooks. Y con esta otra página podrás
+=======
+[En está página](otras_herramientas/jupyter.md) encontrarás indicaciones y más información sobre cómo usar
+Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página](otras_herramientas/notebook.md) podrás
+>>>>>>> b2a70f985028b15467f239e6bb0f8fa2ac86fe53
 introducirte en el uso de los notebooks.
 
