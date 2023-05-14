@@ -4,7 +4,7 @@ A continuación encontrarás una seríe de cuestiones que debes responder en un
 documento Markdown llamado 'mis_respuestas.md' y que deberás ubicar en el mismo directorio que la
 fuente de esta página en tu fork del repositorio del taller. En [la sección "Resolviendo las
 preguntas semanales" de la página "Cómo trabajar con este
-taller"](../material_suplementario/como_trabajar.md#resolviendo-las-preguntas-semanales) encontrarás indicaciones sobre
+taller"](../material_suplementario/como_trabajar/como_trabajar.md#resolviendo-las-preguntas-semanales) encontrarás indicaciones sobre
 cómo hacerlo.
 
 ## Pregunta 1

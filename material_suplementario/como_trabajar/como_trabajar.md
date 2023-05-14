@@ -3,7 +3,7 @@
 Las instrucciones para generar esta web, los contenidos aquí mostrados y todo
 lo relativo a este taller, se encuentra expuesto al mundo -*abierto*- y
 compartido en un repositorio público de GitHub. Puedes ver su contenido siguiendo su url:
-[github.com/uibcdf/Taller-Linux](https://www.github.com/uibcdf/Taller-Linux).
+[github.com/uibcdf/Taller-Python][repositorio].
 
 El propósito de tener este taller en un repositorio público en GitHub es múltiple:
 - Cualquier persona puede tener acceso a él para su lectura.
@@ -18,7 +18,7 @@ hagan sus pruebas, comuniquen sus dudas y problemas o contribuyan a mejorarlo.
 
 Dado que todos los contenidos del repositorio se encuentran compartidos bajo
 los términos de la licencia internacional [Creative Commons BY-NC-SA
-  4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES), los autores permiten que cualquier persona los
+  4.0][cc-by-nc-sa], los autores permiten que cualquier persona los
 puedan copiar, distribuir, modificar y transformar libremente. Este tipo de
 licencia indica a quien ejerce "estas libertades" que debe siempre respetar el
 reconocimiento de la autoria de lo empleado, no puede usar el material con
@@ -57,7 +57,7 @@ En primer lugar debes de crear tu propio usuario en GitHub. GitHub es un
 servicio gratuito... y si no lo conoces y quieres hacer trabajo científico
 computacional, te va a resultar de muchísima ayuda.
 
-[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones necesarias que debes seguir para crear tu usuario.
+[Encontrarás en esta página][otras_herramientas_github] las instrucciones necesarias que debes seguir para crear tu usuario.
 
 ### Haz un fork de este repositorio
 
@@ -73,7 +73,7 @@ los cambios que pueda haber en el proyecto original, o que de una manera muy
 "limpia" puedas proponer la incorporación de tus cambios al proyecto original
 (convirtíendote a efectos de la licencia en coautor del mismo).
 
-[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu propio fork de este taller.
+[Encontrarás en esta página][otras_herramientas_github] las instrucciones para hacer tu propio fork de este taller.
 
 ### Haz tu primer clon de tu repositorio fork
 
@@ -85,7 +85,8 @@ manera puedes editar un fichero en tu computadora y, cuando tu decidas, subir
 los cambios a la copia de tu fork (la de la nube). A esto último se le conoce
 como "empujar" los cambios, o hacer un "*push*".
 
-[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu primer clon local de tu repositorio.
+[Encontrarás en esta página][otras_herramientas_github] las instrucciones para
+hacer tu primer clon local de tu repositorio.
 
 Pero, aunque ya con tu fork local puedas cómodamente seguir el desarrollo de
 este taller, no nos quedemos aquí. Imagina que terminaste de trabajar en tu
@@ -115,13 +116,13 @@ colaboración, principalmente de software y herramientas computacionales pero no
 únicamente. Para facilitar la comunicación entre los desarrolladores y
 también con la comunidad a la que está dirigida el proyecto, se incluyeron en
 la plataforma lugares y mecanismos con los que interaccionar. Nos fijaremos
-especialmente en dos: [el tablero de problemas (*Issues board*)](https://github.com/uibcdf/Taller-Linux/issues) y [el foro de
-discusiones (*Discussions*)](https://github.com/uibcdf/Taller-Linux/discussions). Los usaremos para centralizar las discusiones y la
+especialmente en dos: [el tablero de problemas (*Issues board*)][issues_board] y [el foro de
+discusiones (*Discussions*)][discussions]. Los usaremos para centralizar las discusiones y la
 comunicación entre nosotros en este taller.
 
 ### El tablero de problemas
 
-[El tablero de problemas (*Issues board*)](https://github.com/uibcdf/Taller-Linux/issues) fue diseñado para poder compartir:
+[El tablero de problemas (*Issues board*)][issues_board] fue diseñado para poder compartir:
 
 - Propuestas de cambios e implementaciones nuevas.
 - Discusiones de trabajo sobre aspectos específicos del proyecto.
@@ -142,7 +143,7 @@ alejado de aquel para el que fue construida: interaccionar entre nosotros.
 
 Haremos uso del tablero de problemas para compartir discusiones y dudas de
 manera pública, así como para recibir comentarios y retroalimentación sobre
-ellos. [En esta página](otras_herramientas/github.md) encontrarás información sobre cómo hacerlo.
+ellos. [En esta página][otras_herramientas_github] encontrarás información sobre cómo hacerlo.
 
 Como participante del taller, el tablero de problemas debe ser tu primera
 opción de contacto con el resto de participantes y con los responsables y/o
@@ -151,7 +152,7 @@ tutores. Úsala para comunicar tus problemas, dudas o propuestas.
 ### El foro de discusiones
 
 Otro área de interés para interaccionar con los usuarios y desarrolladores de
-un proyecto es la [web de discusiones (*Disscusions*)](https://github.com/uibcdf/Taller-Linux/discussions). Usualmente esta
+un proyecto es la [web de discusiones (*Disscusions*)][discussions]. Usualmente esta
 herramienta se usa para centralizar conversaciones abiertas de caracter más
 general que aquellas registradas en el tablero de problemas.
 
@@ -159,7 +160,7 @@ Usaremos el área, o foro, de discusiones para trasladar conversaciones de
 interés general para los participantes, los desarrolladores de contenido y los
 tutores del taller.
 
-[En esta página](otras_herramientas/github.md) puedes encontrar indicaciones sobre cómo usar la web de discusiones.
+[En esta página][otras_herramientas_github] puedes encontrar indicaciones sobre cómo usar la web de discusiones.
 
 Las discusiones que encontrarás en el taller son propuestas y moderadas por los
 responsables y/o tutores. Participa en ellas libremente respetando a los demás.
@@ -191,7 +192,7 @@ con la parte "teórica" y/o "computacional" del proyecto científico sí podemos
 acercarnos a segurar la reproducibilidad de lo comunicado haciendo uso de las
 mismas herramientas y el mismo laboratorio. ¿Cómo? Proporcionando instrucciones
 precisas de cómo armar el entorno de ejecución, detallando las herramientas y la
-versión usada. Para eso, podemos usar gestores de ambientes de trabajo como [Conda](otras_herramientas/conda.md).
+versión usada. Para eso, podemos usar gestores de ambientes de trabajo como [Conda][otras_herramientas_conda].
 
 El repositorio contiene un fichero llamado "conda_env.yaml" con el que puedes
 configurar un entorno virtual de conda para usar las mismas herramientas que
@@ -200,7 +201,7 @@ a la configuración de tu sistema operativo y el conjunto de programas que usa.
 
 ### Conda
 
-Antes de instalar [Conda](otras_herramientas/conda.md), si es la primera vez que oyes de este gestor de
+Antes de instalar [Conda][otras_herramientas_conda], si es la primera vez que oyes de este gestor de
 ambientes de trabajo e instalación de paquetes, imagina la siguiente situación.
 Quieres reproducir un experimento computacional en tu computadora y ese
 experimento fue realizado haciendo uso de las siguientes herramientas:
@@ -219,7 +220,7 @@ te permite crear entornos de trabajo como si fueran burbujas en tu máquina en
 las que entrar, instalar herramientas, trabajar y salir de ellas sin afectar la
 configuración de tu sistema operativo y el resto de programas.
 
-[Encontrarás en esta página](otras_herramientas/conda.md) las instrucciones para instalar y trabajar con Conda en tu equipo.
+[Encontrarás en esta página][otras_herramientas_conda] las instrucciones para instalar y trabajar con Conda en tu equipo.
 
 ### Crea un ambiente para trabajar en el taller
 
@@ -239,9 +240,9 @@ responsables y desarrolladores, puedes compilar tu mismo estas páginas web loca
 traduciendo mediante el siguiente comando sus ficheros ".md" y ".ipynb" a
 lenguaje HTML (ficheros ".html").
 
-Activas el ambiente de trabajo -supongamos que lo llamaste "Taller-Linux"-:
+Activas el ambiente de trabajo -supongamos que lo llamaste "Taller-Python"-:
 ```bash
-conda activate Taller-Linux
+conda activate Taller-Python
 ```
 
 Y en el mismo directorio de tu clon local de este repositorio, ejecuta:
@@ -277,7 +278,7 @@ Markdown. Markdown nos permite de una manera muy económica y sencilla,
 especificar cómo será visualizado nuestro texto plano: en cursiva, con un
 encabezado de sección, con una tabla, un hiper-enlace, una imagen... Esta misma
 página web, tiene su contenido en un fichero de
-texto en "lenguaje" Markdown. Échale un vistazo en esta [liga](otras_herramientas/markdown.md). Para modificar
+texto en "lenguaje" Markdown. Échale un vistazo en esta [liga][otras_herramientas_markdown]. Para modificar
 los contenidos de esta página sólo tenemos que abrir con cualquier editor de
 texto ese documento, que llamamos fuente (como si fuera la fuente de un
 lenguaje de programación) y editarlo.
@@ -289,7 +290,7 @@ distribución de contenidos. Es más barato compartir por la red un texto plano
 con instrucciones que un documento cuyo estilo y formato ya se encuentra
 codificado en código máquina en el mismo fichero.
 
-[En esta página](otras_herramientas/markdown.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
+[En esta página][otras_herramientas_markdown] encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
 
 ### Jupyter notebooks
 
@@ -326,29 +327,29 @@ Dicho esto, Jupyter Lab y sus Jupyter notebooks son un entorno de trabajo y un
 formato de ficheros ideal para el trabajo computacional de investigación. Y por
 lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que manejarás en este taller.
 
-[En está página](otras_herramientas/jupyter.md) encontrarás indicaciones y más información sobre cómo usar
-Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página](otras_herramientas/notebook.md) podrás
+[En está página][otras_herramientas_jupyter] encontrarás indicaciones y más información sobre cómo usar
+Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página][otras_herramientas_notebook] podrás
 introducirte en el uso de los notebooks.
 
 ## Resolviendo el reto semanal
 
-
+**En construcción**
 
 ## Resolviendo las preguntas semanales
 
 Cada semana encontrarás una página llamada "Preguntas de la semana" (ver por
 ejemplo [las preguntas correspondientes a la semana
-1](../semana_1/preguntas.md)). La fuente de esa web es un documento Markdown
+1][semana_1_preguntas]). La fuente de esa web es un documento Markdown
 que puedes encontrar en el repositorio de este taller, o en tu fork (ver por
 ejemplo [el fichero 'preguntas.md' de la primera semana en el repositorio del
-taller](https://github.com/uibcdf/Taller-Linux/blob/main/semana_1/preguntas.md)).
+taller][repo_semana_1_preguntas]).
 
 Para contestarlas puedes proceder de dos maneras distintas.
 
 ### En la web de tu fork de este repositorio
 
 1. Si no lo has hecho ya, crea tu cuenta en GitHub y haz tu propio fork del repositorio del taller.
-Encontrarás instrucciones para ello en [esta página](otras_herramientas/github.md).
+Encontrarás instrucciones para ello en [esta página][otras_herramientas_github].
 
 2. Accede con tu navegador a la web de tu fork del repositorio del taller.
 
@@ -356,23 +357,23 @@ Encontrarás instrucciones para ello en [esta página](otras_herramientas/github
 
 4. Añade un nuevo fichero con el nombre 'mis_respuestas.md' haciendo click en el botón 'Add file'.
 
-```{figure} add_file_in_fork.png
+:::{figure} add_file_in_fork.png
 :align: center
-```
+:::
 
 5. En otra pestaña del navegador, abre el fichero llamado 'preguntas.md' de la
    semana cuyas respuestas quieres contestar. Y activando la vista 'Code' del
    fichero, selecciona y copia todo el texto.
 
-```{figure} code_en_preguntas.png
+:::{figure} code_en_preguntas.png
 :align: center
-```
+:::
 
 6. Copia el texto copiado en tu nuevo fichero 'mis_respuestas.md'.
 
-```{figure} copia_texto_mis_respuestas.png
+:::{figure} copia_texto_mis_respuestas.png
 :align: center
-```
+:::
 
 7. Edita el texto de tu fichero 'mis_respuestas.md' para incluir tu respuesta a cada pregunta.
 
@@ -380,25 +381,25 @@ Encontrarás instrucciones para ello en [esta página](otras_herramientas/github
    Introduce el título de tu 'commit' (registro de cambios) y una descripción
    de los cambios. A continuación haz click en el botón verde 'Commit changes' para registrar los cambios.
 
-```{figure} commit.png
+:::{figure} commit.png
 :align: center
 :width: 60%
-```
+:::
 
 9. Listo! Ya tienes tu nuevo documento 'mis_respuestas.md' guardado en tu fork
    del repositorio. Podrás editarlo las veces que quieras haciendo click en el
    botón del lápiz de la web del fichero. No olvides registrar los cambios con
    el botón 'Commit changes...' (paso 8).
 
-```{figure} edit.png
+:::{figure} edit.png
 :align: center
-```
+:::
 
 ### En tu clon local de tu fork de este repositorio
 
 1. Si no lo has hecho ya, crea tu cuenta en GitHub, haz tu propio fork del
    repositorio del taller y clónalo localmente en tu computadora. Encontrarás
-   instrucciones para ello en [esta página](otras_herramientas/github.md).
+   instrucciones para ello en [esta página][otras_herramientas_github].
 
 2. Navega en el sistema de ficheros de tu sistema operativo hasta el directorio
    del clon local de tu fork del repositorio de este taller.
@@ -409,20 +410,36 @@ Encontrarás instrucciones para ello en [esta página](otras_herramientas/github
 
 5. Edita el nuevo fichero 'mis_respuestas.md' y contesta las preguntas de la semana.
 
-6. Pídele a Git que añada el fichero a su lista de rastreo ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+6. Pídele a Git que añada el fichero a su lista de rastreo ([aquí][otras_herramientas_git] puedes encontrar ayuda):
 ```bash
 git add --all
 ```
 
-7. Compromete los cambios ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+7. Compromete los cambios ([aquí][otras_herramientas_git] puedes encontrar ayuda):
 ```bash
 git commit -m "He contestado a las respuestas semanales"
 ```
 
-8. Y finalmente empuja los cambios a tu fork en la web de GitHub del repositorio de este taller ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+8. Y finalmente empuja los cambios a tu fork en la web de GitHub del repositorio de este taller ([aquí][otras_herramientas_git.md] puedes encontrar ayuda):
 ```bash
 git push
 ```
 
 9. Comprueba en la web de GitHub de tu fork que efectivamente aparece tu nuevo fichero 'mis_respuestas.md'.
+
+
+
+
+[repositorio]: https://www.github.com/uibcdf/Taller-Python
+[cc-by-nc-sa]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES
+[otras_herramientas_github]: ../otras_herramientas/github/github.md
+[otras_herramientas_git]: ../otras_herramientas/git/git.md
+[otras_herramientas_conda]: ../otras_herramientas/conda/conda.md
+[otras_herramientas_jupyter]: ../otras_herramientas/jupyter/jupyter.md
+[otras_herramientas_markdown]: ../otras_herramientas/markdown/markdown.md
+[otras_herramientas_notebook]: ../otras_herramientas/notebook/notebook.md
+[issues_board]: https://github.com/uibcdf/Taller-Python/issues
+[discussions]: https://github.com/uibcdf/Taller-Python/discussions
+[semana_1_preguntas]: ../../semana_1/preguntas.md
+[repo_semana_1_preguntas]: https://github.com/uibcdf/Taller-Python/blob/main/semana_1/preguntas.md
 

@@ -1,15 +1,12 @@
-<br>
 
 ```{image} jupyter.png
-:width: 200px
+:width: 40%
 :align: center
 ```
 
 <br>
 
-
 # Jupyter
-
 
 ## ¿Qué es Jupyter?
 
@@ -135,9 +132,9 @@ conda install -c conda-forge jupyterlab
 Si usas otro gestor de entornos puedes encontrar ayuda sobre el proceso de
 instalación en la documentación oficial disponible:
 
-http://jupyter.org/install
-https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
-http://jupyter.org/documentation
+- [Installing Jupyter][jupyter_install]
+- [JupyterLab Installation][jupyterlab_install]
+- [Jupyter Documentation][jupyter_docs]
 
 ## ¿Cómo se usa?
 
@@ -165,48 +162,47 @@ poco más de sus funcionalidades te invitamos a visitar las webs de
 documentación listadas al final de este documento o al mismo [notebook
 interactivo introductorio de ipython y jupyter][binder_jupyter].
 
----
 
-## Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a>
+## Dudas, problemas técnicos y soluciones.
 
-Para centralizar esas dudas técnicas sobre el tema de esta unidad o proponer
-soluciones o sugerencias más técnicas que queremos encontrar en el futuro
-comentadas y visibles para todos, haz uso del siguiente canal:
+Para compartir con nosotros y con el resto de participantes las dudas,
+problemas, sugerencias o soluciones, que pudieras tener sobre el uso de Jupyter y
+esta sección, te proponemos usar la siguiente discusión en este repositorio:
 
-[Foro Técnico: Jupyter][foro]
+[Foro técnico sobre Jupyter][foro]
 
-## Más recursos útiles <a class="anchor" id="recursos"></a>
+## Más recursos útiles
 
-El propósito de esta unidad es ser un documento únicamente introductorio.
-Puedes encontrar -o contribuir añadiendo- más información útil en el siguiente
-listado.
+Esta web era sólo una guia introductoria. No es funcional documentarse o
+estudiar mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
+manera más solida si con el uso te van surgiendo necesidades a las que vas
+dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más
+información útil en los siguientes listados.
 
-### Documentación <a class="anchor" id="documentacion"></a>
+### Documentación
 
-http://jupyter.org/    
-http://jupyter.org/documentation    
-https://jupyterlab.readthedocs.io/en/stable/    
-https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html    
-https://jupyter-notebook.readthedocs.io/en/latest/    
-https://www.datacamp.com/community/blog/ipython-jupyter    
-https://medium.com/@brianray_7981/jupyterlab-first-impressions-e6d70d8a175d    
-https://medium.com/@subpath/jupyter-lab-extensions-for-data-scientist-e0d97d529fc1   
-https://www.slideshare.net/jileon/introduccion-a-jupyter-antes-i-python-notebook    
-https://github.com/damianavila/Python-Cientifico-HCC/blob/master/2_IPython.ipynb    
+Compartimos en esta sección la documentación oficial de la herramienta:
 
-### Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a>
+- [Jupyter][jupyter]
+- [Jupyter Documentation][jupyter_docs]
+- [JupyterLab Documentation][jupyterlab_docs]   
+- [JupyterCon JupyterLab Training][jupytercon_training]
+- [JupyterCon JupyterLab Tutorial][jupytercon_tutorial]
+- [JupyterLab Demo][jupyterlab_demo]
+- [JupyterLab Media][jupyterlab_media]
 
-https://www.dataquest.io/blog/jupyter-notebook-tutorial/    
-https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook    
-https://www.adictosaltrabajo.com/2018/01/18/primeros-pasos-con-jupyter-notebook/   
-https://github.com/jupyterlab/jupytercon-jupyterlab-training
-https://github.com/jupyterlab/jupyterlab-demo
-https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial
-https://github.com/jupyterlab/jupyterlab-media
+### Tutoriales, Webinars y cursos gratuitos
 
-[jupyter]: https://jupyter.org/about
+Aquí encontrarás una lista de tutoriales, videos o cursos gratuitos que puedes visitar para aprender más sobre GitHub.
+
+- [DataCamp JupyterLab Tutorial][datacamp_jupyterlab]
+- [JustInBois Bootcamp 2020][justinbois]
+- [NoComplexity Mastering JupyterLab][nocomplexity]
+- [UCSB Carpentry Introduction JupyterLab][ucsbcarpentry]
+
+[jupyter]: https://jupyter.org
 [mathematica]: http://www.wolfram.com/mathematica/
-[foro]: https://github.com/uibcdf/Academia/issues/6
+[foro]: https://github.com/uibcdf/Taller-Python/discussions/5
 [binder_jupyter]: https://mybinder.org/v2/gh/ipython/ipython-in-depth/master?filepath=binder/Index.ipynb
 [jupyter_notebook]: https://github.com/jupyter/notebook
 [jupyter_widgets]: http://jupyter.org/widgets￼
@@ -223,3 +219,15 @@ https://github.com/jupyterlab/jupyterlab-media
 [blog_fperez]: http://blog.fperez.org/2012/01/ipython-notebook-historical.html
 [ipython]: https://ipython.org/
 [wikipedia_fperez]: https://en.wikipedia.org/wiki/Fernando_P%C3%A9rez_(software_developer)
+[jupyter_install]: http://jupyter.org/install
+[jupyterlab_install]: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
+[jupyter_docs]: https://docs.jupyter.org/en/latest/
+[jupyterlab_docs]: https://jupyterlab.readthedocs.io/en/stable/    
+[jupytercon_training]: https://github.com/jupyterlab/jupytercon-jupyterlab-training
+[jupyterlab_demo]: https://github.com/jupyterlab/jupyterlab-demo
+[jupytercon_tutorial]: https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial
+[jupyterlab_media]: https://github.com/jupyterlab/jupyterlab-media
+[datacamp_jupyterlab]: https://www.datacamp.com/tutorial/installing-jupyter-notebook
+[justinbois]: http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html
+[nocomplexity]: https://nocomplexity.com/documents/jupyterlab/intro.html
+[ucsbcarpentry]: https://ucsbcarpentry.github.io/2020-06-03-UCSB-LibCarp/13-intro-jupyter-lab/

@@ -79,8 +79,8 @@ Para conocer otros talleres impartidos por la UIBCDF visita [este enlace](https:
    :maxdepth: 2
    :hidden:
 
-   material_suplementario/como_trabajar.md
-   material_suplementario/python.md
+   material_suplementario/como_trabajar/como_trabajar.md
+   material_suplementario/python/python.md
    material_suplementario/otras_herramientas/index.md
 
 .. toctree::
