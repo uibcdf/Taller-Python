@@ -33,7 +33,7 @@ jobs:
       - name: Setup conda env
         uses: mamba-org/provision-with-micromamba@main
         with:
-          environment-file: conda_env_dev.yaml
+          environment-file: conda_env.yaml
           environment-name: docs
           channels: uibcdf, conda-forge, defaults
           extra-specs: |
