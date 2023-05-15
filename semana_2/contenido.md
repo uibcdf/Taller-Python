@@ -4,6 +4,9 @@
 <center><img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" width="40%"></center>
 <br>
 
+Los siguientes contenidos serán presentados en [una sesión de videoconferencia](sesion.md).
+Puedes encontrar en [este enlace](slides/slides.pdf) las slides usadas como soporte.
+
 ## ¿Qué es Python?
 
 Python es un lenguaje de [programación interpretado](https://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/) que en la última década se ha impuesto como uno de l
