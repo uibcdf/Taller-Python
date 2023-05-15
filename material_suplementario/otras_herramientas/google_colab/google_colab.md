@@ -2,7 +2,7 @@
 
 <br>
 
-```{image} colab-logo.png
+```{image} Colab-logo.png
 :width: 200px
 :align: center
 ```
