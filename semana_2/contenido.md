@@ -24,17 +24,63 @@ Python, como todo lenguaje intepretado, no es computacionalmente eficiente para 
 
 En la UIBCDF somos conscientes de que existen otros lenguajes interpretados como Perl, Ruby o R. Animamos al lector a conocerlos, así como recomendamos aprender a programar en algún lenguage compilado como Fortran o C.
 
-### ¿Python 2 o 3?
+## Por qué Python
+
+En construcción...
+
+## Qué es un lenguaje interpretado y qué uno compilado
+
+En construcción...
+
+## ¿Qué versiones de Python hay?
 
 Python 2 fue declarado obsoleto el [1 de enero de 2020](https://www.python.org/dev/peps/pep-0373/). La duda de qué versión de Python debo usar, 2 o 3, no tiene sentido en la actualidad si queremos poder compartir y ejecutar el código en un futuro próximo. Empieza a usar Python 3.
 
+En construcción...
+
+## El Zen de Python
+
+En construcción...
+
 ## ¿Cómo se instala?
 
-Ver ...
+En construcción...
 
 ## ¿Cómo se usa?
 
-Ver ...
+En construcción...
+
+### Python
+
+En construcción...
+
+### IPython
+
+En construcción...
+
+### Jupyter Notebook
+
+En construcción...
+
+### Google Colab
+
+En construcción...
+
+## Un Script de Python
+
+En construcción...
+
+## Mejor que un script, un módulo o una librería de Python
+
+En construcción...
+
+### Programación modular
+
+En construcción...
+
+### Testeo, documentación y distribución
+
+En construcción...
 
 ## Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a>
 
