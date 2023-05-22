@@ -5,6 +5,12 @@ YouTube de la UIBCDF](https://www.youtube.com/@uibcdf):
 
 <br>
 
-Próximamente...
+<div align="center">
+<iframe class="video-container" id="player" type="text/html"
+src="https://www.youtube.com/embed/wN3vGXark7U?enablejsapi=1&origin=https://www.uibcdf.org"
+frameborder="0">
+</iframe>
+</div>
 
 <br>
+
