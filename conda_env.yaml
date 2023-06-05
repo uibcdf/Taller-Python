@@ -12,3 +12,6 @@ dependencies:
 - sphinx-design
 - sphinx-favicon
 - myst-nb
+- numpy
+- matplotlib
+
