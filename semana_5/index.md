@@ -6,7 +6,7 @@
 .. toctree::
    :maxdepth: 1
 
-   contenido.md
+   contenido.ipynb
    reto.ipynb
    preguntas.md
    recursos_adicionales.md
