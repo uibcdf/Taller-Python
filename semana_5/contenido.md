@@ -1,3 +1,0 @@
-# Contenido 
-
-En construcción...
