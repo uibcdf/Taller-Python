@@ -1,0 +1,1028 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Cómo trabajar con este taller &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'material_suplementario/como_trabajar/como_trabajar';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Cómo instalar y trabajar con Python" href="../python/python.html" />
+    <link rel="prev" title="Recursos adicionales" href="../../semana_10/recursos_adicionales.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_4/index.html">Semana 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_4/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_4/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_4/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_4/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_5/index.html">Semana 5</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../semana_5/contenido.html">Contenido</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../semana_5/numpy.html">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../semana_5/matplotlib.html">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../semana_5/reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../semana_5/reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../semana_5/reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_5/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_5/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../otras_herramientas/index.html">Otras herramientas</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../otras_herramientas/google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/material_suplementario/como_trabajar/como_trabajar.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/material_suplementario/como_trabajar/como_trabajar.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Cómo trabajar con este taller</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-repositorio-como-instrumento-con-el-que-interaccionar">El repositorio como instrumento con el que interaccionar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crea-tu-usuario-en-github">Crea tu usuario en GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-un-fork-de-este-repositorio">Haz un fork de este repositorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-tu-primer-clon-de-tu-repositorio-fork">Haz tu primer clon de tu repositorio fork</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-tantos-clones-de-tu-repositorio-como-necesites">Haz tantos clones de tu repositorio como necesites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-repositorio-como-foro-y-punto-de-encuentro">El repositorio como foro y punto de encuentro</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-tablero-de-problemas">El tablero de problemas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-foro-de-discusiones">El foro de discusiones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-entorno-de-ejecucion-del-repositorio-y-su-material">El entorno de ejecución del repositorio y su material</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crea-un-ambiente-para-trabajar-en-el-taller">Crea un ambiente para trabajar en el taller</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tu-propia-version-local-de-esta-web">Tu propia versión local de esta web</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-material-del-repositorio">El material del repositorio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebooks">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolviendo-el-reto-semanal">Resolviendo el reto semanal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolviendo-las-preguntas-semanales">Resolviendo las preguntas semanales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-web-de-tu-fork-de-este-repositorio">En la web de tu fork de este repositorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-tu-clon-local-de-tu-fork-de-este-repositorio">En tu clon local de tu fork de este repositorio</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="como-trabajar-con-este-taller">
+<h1>Cómo trabajar con este taller<a class="headerlink" href="#como-trabajar-con-este-taller" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Las instrucciones para generar esta web, los contenidos aquí mostrados y todo
+lo relativo a este taller, se encuentra expuesto al mundo -<em>abierto</em>- y
+compartido en un repositorio público de GitHub. Puedes ver su contenido siguiendo su url:
+<a class="reference external" href="https://www.github.com/uibcdf/Taller-Python">github.com/uibcdf/Taller-Python</a>.</p>
+<p>El propósito de tener este taller en un repositorio público en GitHub es múltiple:</p>
+<ul class="simple">
+<li><p>Cualquier persona puede tener acceso a él para su lectura.</p></li>
+<li><p>Cualquier persona puede proponer cambios y contribuir a su desarrollo.</p></li>
+<li><p>El repositorio se emplea al mismo tiempo para servir en internet la web de este taller.</p></li>
+<li><p>El repositorio permite que lo puedas copiar y editar, y publicar tus cambios.</p></li>
+<li><p>El repositorio es además foro de discusión y punto de encuentro para compartir dudas, problemas y soluciones.</p></li>
+</ul>
+<p>De esta manera, el mismo repositorio es una herramienta muy útil no sólo como
+vehículo de información, sino elemento interactivo para que los participantes
+hagan sus pruebas, comuniquen sus dudas y problemas o contribuyan a mejorarlo.</p>
+<p>Dado que todos los contenidos del repositorio se encuentran compartidos bajo
+los términos de la licencia internacional <a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES">Creative Commons BY-NC-SA
+4.0</a>, los autores permiten que cualquier persona los
+puedan copiar, distribuir, modificar y transformar libremente. Este tipo de
+licencia indica a quien ejerce «estas libertades» que debe siempre respetar el
+reconocimiento de la autoria de lo empleado, no puede usar el material con
+fines comerciales y todo producto derivado debe compartirse en los mismos
+términos. Y todo esto porque el vertiginoso desarrollo de las herramientas
+computacionales abiertas primero (<em>Open Source</em>), y de los desarrollos
+científicos que han adoptado mecanismos para asegurar que la ciencia sea
+abierta (<em>Open Science</em>) despues, reafirman a los responsables y autores de
+estos contenidos en que cooperar es más eficiente que competir a la hora de
+resolver problemas que nos atañen a todos.</p>
+<p>Vamos a ver en primer lugar cómo debes usarlo para resolver los retos semanales
+y para publicar tus respuestas a las preguntas semanales.</p>
+<section id="el-repositorio-como-instrumento-con-el-que-interaccionar">
+<h2>El repositorio como instrumento con el que interaccionar<a class="headerlink" href="#el-repositorio-como-instrumento-con-el-que-interaccionar" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Este taller propone que el participante cada semana resuelva unos retos y
+conteste a unas preguntas relacionadas con el contenido propuesto y comentado
+anteriormente. La mayoría de las ocasiones esos retos requieren la resolución
+práctica de una tarea, y para que los asesores del taller podamos ayudar,
+éstos, así como las respuestas a las preguntas semanales, deben ser
+compartidos. ¿Y qué mejor manera de hacer todo esto si no editando tu propio
+clon de este repositorio? Al fin y al cabo, si este taller forma parte de una
+serie de talleres dedicada a la introducción de herramientas computacionales
+para el trabajo de investigación científica, resulta muy pertinente que pongas
+en práctica los principios de la ciencia abierta (<em>open science</em>) que
+aprendimos del trabajo en código abierto (<em>open source</em>): para demostrar
+que lo comunicado y aprendido es reproducible, todo lo necesario para
+reproducirlo debe ser comunicado.</p>
+<p>Comencemos por crear tu propio usuario en GitHub si es que todavía no tienes uno.</p>
+<section id="crea-tu-usuario-en-github">
+<h3>Crea tu usuario en GitHub<a class="headerlink" href="#crea-tu-usuario-en-github" title="Enlace permanente a este encabezado">#</a></h3>
+<p>En primer lugar debes de crear tu propio usuario en GitHub. GitHub es un
+servicio gratuito… y si no lo conoces y quieres hacer trabajo científico
+computacional, te va a resultar de muchísima ayuda.</p>
+<p><a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">Encontrarás en esta página</span></a> las instrucciones necesarias que debes seguir para crear tu usuario.</p>
+</section>
+<section id="haz-un-fork-de-este-repositorio">
+<h3>Haz un fork de este repositorio<a class="headerlink" href="#haz-un-fork-de-este-repositorio" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Una vez que tengas tu usuario en GitHub, debes generar tu propia copia derivada
+de este repositorio. O como se dice en la jerga de la comunidad del desarrollo
+en colaboración de código abierto: una vez que ya tengas usuario, debes crear
+tu propio «fork».</p>
+<p>El «fork» del repositorio lo podemos entender como una copia del proyecto
+original que no ha perdido el cordón umbilicar con él. Esto permite que puedas
+editar y desarrollar tu propio proyecto con la posibilidad de actualizar en él
+los cambios que pueda haber en el proyecto original, o que de una manera muy
+«limpia» puedas proponer la incorporación de tus cambios al proyecto original
+(convirtíendote a efectos de la licencia en coautor del mismo).</p>
+<p><a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">Encontrarás en esta página</span></a> las instrucciones para hacer tu propio fork de este taller.</p>
+</section>
+<section id="haz-tu-primer-clon-de-tu-repositorio-fork">
+<h3>Haz tu primer clon de tu repositorio fork<a class="headerlink" href="#haz-tu-primer-clon-de-tu-repositorio-fork" title="Enlace permanente a este encabezado">#</a></h3>
+<p>GitHub te permite interaccionar con un repositorio, en este caso con tu fork de
+este taller, haciendo uso de su web con el navegador de tu máquina. Pero esto
+resulta incómodo cuando vas a modificarlo y editarlo con frecuencia. ¿No sería
+buena idea disponer localmente de una copia de tu fork en tu máquina? De esta
+manera puedes editar un fichero en tu computadora y, cuando tu decidas, subir
+los cambios a la copia de tu fork (la de la nube). A esto último se le conoce
+como «empujar» los cambios, o hacer un «<em>push</em>».</p>
+<p><a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">Encontrarás en esta página</span></a> las instrucciones para
+hacer tu primer clon local de tu repositorio.</p>
+<p>Pero, aunque ya con tu fork local puedas cómodamente seguir el desarrollo de
+este taller, no nos quedemos aquí. Imagina que terminaste de trabajar en tu
+proyecto y vas a continuar en unas horas desde otra máquina, en casa, por ejemplo.
+¿No sería buena idea hacer otro clon local del mismo repositorio remoto en tu
+otra máquina? De esta manera, al llegar a casa descargas los cambios, haces un
+«<em>pull</em>» y continuas trabajando.</p>
+</section>
+<section id="haz-tantos-clones-de-tu-repositorio-como-necesites">
+<h3>Haz tantos clones de tu repositorio como necesites<a class="headerlink" href="#haz-tantos-clones-de-tu-repositorio-como-necesites" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puedes hacer tantos clones locales de tu repositorio como quieras. Sólo debes
+de tener la precaución de sincronizar su contenido con el repositorio remoto
+-el que GitHub almacena en la nube- antes de trabajar con ellos. Y no sólamente tu…</p>
+<p>Vamos a suponer que trabajas con más personas en el desarrollo de un proyecto,
+la escritura de un texto, por ejemplo. Habéis creado un repositorio central
+(por ejemplo el que está en la nube en GiHub), y cada persona que va a
+contribuir tiene sus clones locales (o su fork y sus clones locales). Git, el
+motor detrás de GitHub, está perfectamente preparado para gestionar las
+contribuciones de manera organizada guardando un histórico de ellas. Pero esto
+es tema de otro de los talleres de la UIBCDF.</p>
+</section>
+</section>
+<section id="el-repositorio-como-foro-y-punto-de-encuentro">
+<h2>El repositorio como foro y punto de encuentro<a class="headerlink" href="#el-repositorio-como-foro-y-punto-de-encuentro" title="Enlace permanente a este encabezado">#</a></h2>
+<p>GitHub es un instrumento en la nube que nos permite desarrollar proyectos en
+colaboración, principalmente de software y herramientas computacionales pero no
+únicamente. Para facilitar la comunicación entre los desarrolladores y
+también con la comunidad a la que está dirigida el proyecto, se incluyeron en
+la plataforma lugares y mecanismos con los que interaccionar. Nos fijaremos
+especialmente en dos: <a class="reference external" href="https://github.com/uibcdf/Taller-Python/issues">el tablero de problemas (<em>Issues board</em>)</a> y <a class="reference external" href="https://github.com/uibcdf/Taller-Python/discussions">el foro de
+discusiones (<em>Discussions</em>)</a>. Los usaremos para centralizar las discusiones y la
+comunicación entre nosotros en este taller.</p>
+<section id="el-tablero-de-problemas">
+<h3>El tablero de problemas<a class="headerlink" href="#el-tablero-de-problemas" title="Enlace permanente a este encabezado">#</a></h3>
+<p><a class="reference external" href="https://github.com/uibcdf/Taller-Python/issues">El tablero de problemas (<em>Issues board</em>)</a> fue diseñado para poder compartir:</p>
+<ul class="simple">
+<li><p>Propuestas de cambios e implementaciones nuevas.</p></li>
+<li><p>Discusiones de trabajo sobre aspectos específicos del proyecto.</p></li>
+<li><p>Notificaciones de problemas y errores, y propuestas de soluciones.</p></li>
+</ul>
+<p>¿Compartir por quién y para quién? Para compartir:</p>
+<ul class="simple">
+<li><p>desde un miembro del equipo de desarrollo con otros miembros del equipo.</p></li>
+<li><p>desde cualquier usuario o miembro de la comunidad a la que va dirigido el
+proyecto al equipo de desarrollo.</p></li>
+<li><p>desde cualquier desarrollador a cualquier usuario o miembro de la
+comunidad que quiera interaccionar.</p></li>
+<li><p>desde cualquier usuario o miembro de la comunidad a otros usuarios
+o al resto de la comunidad.</p></li>
+</ul>
+<p>En el taller vamos a provechar esta infraestructura para hacer un uso no tan
+alejado de aquel para el que fue construida: interaccionar entre nosotros.</p>
+<p>Haremos uso del tablero de problemas para compartir discusiones y dudas de
+manera pública, así como para recibir comentarios y retroalimentación sobre
+ellos. <a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">En esta página</span></a> encontrarás información sobre cómo hacerlo.</p>
+<p>Como participante del taller, el tablero de problemas debe ser tu primera
+opción de contacto con el resto de participantes y con los responsables y/o
+tutores. Úsala para comunicar tus problemas, dudas o propuestas.</p>
+</section>
+<section id="el-foro-de-discusiones">
+<h3>El foro de discusiones<a class="headerlink" href="#el-foro-de-discusiones" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Otro área de interés para interaccionar con los usuarios y desarrolladores de
+un proyecto es la <a class="reference external" href="https://github.com/uibcdf/Taller-Python/discussions">web de discusiones (<em>Disscusions</em>)</a>. Usualmente esta
+herramienta se usa para centralizar conversaciones abiertas de caracter más
+general que aquellas registradas en el tablero de problemas.</p>
+<p>Usaremos el área, o foro, de discusiones para trasladar conversaciones de
+interés general para los participantes, los desarrolladores de contenido y los
+tutores del taller.</p>
+<p><a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">En esta página</span></a> puedes encontrar indicaciones sobre cómo usar la web de discusiones.</p>
+<p>Las discusiones que encontrarás en el taller son propuestas y moderadas por los
+responsables y/o tutores. Participa en ellas libremente respetando a los demás.
+Y si quieres proponer la apertura de una nueva discusión, haz uso del tablero
+de problemas para comunicar la propuesta.</p>
+</section>
+</section>
+<section id="el-entorno-de-ejecucion-del-repositorio-y-su-material">
+<h2>El entorno de ejecución del repositorio y su material<a class="headerlink" href="#el-entorno-de-ejecucion-del-repositorio-y-su-material" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Este taller es un proyecto en colaboración, entre los desarrolladores y
+responsables del contenido, y lo más importante, entre sus participantes. Para que
+dicha colaboración suceda de manera exitosa, debemos asegurar nó sólamente que
+el material es público y puede ser editado por cualquier, sino que cualquiera
+puede configurar el mismo entorno de trabajo para reproducirlo y modificarlo.</p>
+<p>Para que esto se entienda mejor haremos la siguiente analogía. Imagina que
+varios laboratorios científicos en el mundo que trabajan en un proyecto común,
+o que simplemente trabajan sobre las mismas preguntas, necesitan compartir
+hallazgos y métodos de trabajo. ¿Será suficiente con compartir un documento con
+las observaciones y conclusiones hechas por unos investigadores, o un protocolo
+de realización de experimento? No es suficiente para asegurar la
+reproducibilidad de lo comunicado, es necesario también que las herramientas y
+el entorno para reproducir el experimento sea «el mismo». Quizá esto, en
+términos de «ciencia experimental» sea muy difícil o imposible, la
+instrumentación será parecida pero no la misma, el equipo usado podrá ser del
+mismo fabricante y el mismo modelo, pero no el mismo, y las manos del
+investigador y las condiciones de laboratorio nunca serán exactamente iguales.
+Pero a diferencia de la parte «experimental» de una investigación científica,
+con la parte «teórica» y/o «computacional» del proyecto científico sí podemos
+acercarnos a segurar la reproducibilidad de lo comunicado haciendo uso de las
+mismas herramientas y el mismo laboratorio. ¿Cómo? Proporcionando instrucciones
+precisas de cómo armar el entorno de ejecución, detallando las herramientas y la
+versión usada. Para eso, podemos usar gestores de ambientes de trabajo como <a class="reference internal" href="../otras_herramientas/conda/conda.html"><span class="doc std std-doc">Conda</span></a>.</p>
+<p>El repositorio contiene un fichero llamado «conda_env.yaml» con el que puedes
+configurar un entorno virtual de conda para usar las mismas herramientas que
+los responsables del taller y que el resto de participantes. Y esto sin afectar
+a la configuración de tu sistema operativo y el conjunto de programas que usa.</p>
+<section id="conda">
+<h3>Conda<a class="headerlink" href="#conda" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Antes de instalar <a class="reference internal" href="../otras_herramientas/conda/conda.html"><span class="doc std std-doc">Conda</span></a>, si es la primera vez que oyes de este gestor de
+ambientes de trabajo e instalación de paquetes, imagina la siguiente situación.
+Quieres reproducir un experimento computacional en tu computadora y ese
+experimento fue realizado haciendo uso de las siguientes herramientas:</p>
+<ul class="simple">
+<li><p>Python 3.10</p></li>
+<li><p>MolSysMT 0.8.1 (incompatible con versiones de PyUnitWizard menores que la 1.2.0)</p></li>
+</ul>
+<p>Pero en tu computadora tienes:</p>
+<ul class="simple">
+<li><p>Python 3.9</p></li>
+<li><p>PyUnitWizard 1.1.3</p></li>
+</ul>
+<p>¿Debes cambiar la configuración de tu máquina? ¿Debes reemplazar tus programas
+con aquellos necesarios para la ejecución del experimento? No hace falta. Conda
+te permite crear entornos de trabajo como si fueran burbujas en tu máquina en
+las que entrar, instalar herramientas, trabajar y salir de ellas sin afectar la
+configuración de tu sistema operativo y el resto de programas.</p>
+<p><a class="reference internal" href="../otras_herramientas/conda/conda.html"><span class="doc std std-doc">Encontrarás en esta página</span></a> las instrucciones para instalar y trabajar con Conda en tu equipo.</p>
+</section>
+<section id="crea-un-ambiente-para-trabajar-en-el-taller">
+<h3>Crea un ambiente para trabajar en el taller<a class="headerlink" href="#crea-un-ambiente-para-trabajar-en-el-taller" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Cuando tengas instalado Conda en tu máquina de trabajo, ya puedes crear un
+ambiente para trabajar con este taller haciendo uso de las mismas herramientas
+que los desarrolladores y el resto de participantes. Para eso usarás el fichero
+«conda_env.yaml».</p>
+<p>Encontrarás información sobre cómo crear un entorno de trabajo con el fichero
+«conda_env.yaml» en esta página.</p>
+<section id="tu-propia-version-local-de-esta-web">
+<h4>Tu propia versión local de esta web<a class="headerlink" href="#tu-propia-version-local-de-esta-web" title="Enlace permanente a este encabezado">#</a></h4>
+<p>No es algo que vayas a necesitar para trabajar con este taller, pero como
+prueba de que ya dispones del mismo entorno de ejecución que sus
+responsables y desarrolladores, puedes compilar tu mismo estas páginas web localmente
+traduciendo mediante el siguiente comando sus ficheros «.md» y «.ipynb» a
+lenguaje HTML (ficheros «.html»).</p>
+<p>Activas el ambiente de trabajo -supongamos que lo llamaste «Taller-Python»-:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>Taller-Python
+</pre></div>
+</div>
+<p>Y en el mismo directorio de tu clon local de este repositorio, ejecuta:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html
+</pre></div>
+</div>
+<p>Verás que se creó un directorio nuevo llamado “_build”. Ahora puedes lanzar con
+tu navegador la web principal de este taller de manera local. Por ejemplo, si
+usas Google Chrome y un sistema operativo Linux, puedes ejecutar en la
+terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>google-chrome<span class="w"> </span>_build/html/index.html
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="el-material-del-repositorio">
+<h2>El material del repositorio<a class="headerlink" href="#el-material-del-repositorio" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para visualizar el material del repositorio, no debes de saber nada más que
+navegar por las páginas y secciones de esta web. Sin embargo, para comenzar a
+interaccionar con sus materiales, es necesario que comprendas la naturaleza de
+sus ficheros y cómo editarlos o ejecutarlos.</p>
+<p>Encontrarás fichero de dos tipos:</p>
+<ul class="simple">
+<li><p>ficheros «de texto» en lenguaje Markdown (con extensión “.md”)</p></li>
+<li><p>fichero ejecutables llamados Jupyter notebooks o iPython notebooks (con extensión “.ipynb”).</p></li>
+</ul>
+<p>Veamos para que sirven estos dos tipos de ficheros y cómo se interacciona con ellos.</p>
+<section id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Uno de los lenguajes de marcado más populares para texto con formato es
+Markdown. Markdown nos permite de una manera muy económica y sencilla,
+especificar cómo será visualizado nuestro texto plano: en cursiva, con un
+encabezado de sección, con una tabla, un hiper-enlace, una imagen… Esta misma
+página web, tiene su contenido en un fichero de
+texto en «lenguaje» Markdown. Échale un vistazo en esta <a class="reference internal" href="../otras_herramientas/markdown/markdown.html"><span class="doc std std-doc">liga</span></a>. Para modificar
+los contenidos de esta página sólo tenemos que abrir con cualquier editor de
+texto ese documento, que llamamos fuente (como si fuera la fuente de un
+lenguaje de programación) y editarlo.</p>
+<p>Con Markdown, y con otros lenguajes de marcado, entre todos convenimos una
+serie de instrucciones que serán interpretadas de la misma manera por los
+programas de visualiación del documento. Esto economiza mucho el trabajo y la
+distribución de contenidos. Es más barato compartir por la red un texto plano
+con instrucciones que un documento cuyo estilo y formato ya se encuentra
+codificado en código máquina en el mismo fichero.</p>
+<p><a class="reference internal" href="../otras_herramientas/markdown/markdown.html"><span class="doc std std-doc">En esta página</span></a> encontrarás más indicaciones para aprender a usar el lenguaje Markdown.</p>
+</section>
+<section id="jupyter-notebooks">
+<h3>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Los ficheros escritos en lenguaje Markdown están escritos únicamente para la visualización y lectura de sus contenidos.
+Si queremos compartir un documento en el que cualquiera puede encontrar, además de texto y recursos visuales,
+instrucciones de programación y el resultado de
+ellas, la libreta Jupyter notebook o IPython notebook es uno de los instrumentos adecuados.</p>
+<p>Cuando los desarrolladores de herramientas computacionales de código libre y
+los científicos que hacían trabajo computacional querían compartir código de
+programación, o un experimento computacional, debían compartir por un lado el
+código fuente y por otro las instrucciones y comentarios. Para después, confiar
+y esperar en que el destinatario encontrara el mismo resultado y obtuviera, por
+ejemplo en el caso de un experimento científico, la misma representación de los
+datos producidos. Esto no hacía el trabajo en colaboración fácil.
+Acudiendo al ejemplo de la parte experimental de la investigación científica,
+en el ambito del laboratorio experimental los investigadores llevan siglos
+definiendo la cultura y las técnicas del oficio. Una de las herramientas más
+importantes que cualquiera debe manejar en este contexto es la bitácora de
+laboratorio. En ella los investigadores reportan todo lo acontecido y necesario
+para poder reproducir un experimento, incluso agregan las representaciones
+gráficas del resultado del experimento. Todo para intentar asegurar la
+reproducibilidad de lo observado. Ahora, si intentamos definir un conjunto de
+hábitos y herramientas para el buen desarrollo del trabajo computacional de
+investigación, nos encontramos en desventaja. Llevamos muy pocas décadas
+aprendiendo y definiendo el oficio. Por ejemplo, hasta hace muy poco no
+disponíamos de una libreta en la que poder construir un relato mezclando texto,
+código y resultados: efectívamente, la libreta de Jupyter o el Jupyter notebook
+no tiene más de una década. Es cierto que existían precedentes sobre los que
+Jupyter, organización sin ánimo de lucro creada en 2014, implementó su notebook
+y Jupyter Lab (lanzado en 2018).</p>
+<p>Dicho esto, Jupyter Lab y sus Jupyter notebooks son un entorno de trabajo y un
+formato de ficheros ideal para el trabajo computacional de investigación. Y por
+lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que manejarás en este taller.</p>
+<p><a class="reference internal" href="../otras_herramientas/jupyter/jupyter.html"><span class="doc std std-doc">En está página</span></a> encontrarás indicaciones y más información sobre cómo usar
+Jupyter Lab para interaccionar con los notebooks. Y con esta <a class="reference internal" href="../otras_herramientas/notebook/notebook.html"><span class="doc std std-doc">otra página</span></a> podrás
+introducirte en el uso de los notebooks.</p>
+</section>
+</section>
+<section id="resolviendo-el-reto-semanal">
+<h2>Resolviendo el reto semanal<a class="headerlink" href="#resolviendo-el-reto-semanal" title="Enlace permanente a este encabezado">#</a></h2>
+<p><strong>En construcción</strong></p>
+</section>
+<section id="resolviendo-las-preguntas-semanales">
+<h2>Resolviendo las preguntas semanales<a class="headerlink" href="#resolviendo-las-preguntas-semanales" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Cada semana encontrarás una página llamada «Preguntas de la semana» (ver por
+ejemplo <a class="reference internal" href="../../semana_1/preguntas.html"><span class="doc std std-doc">las preguntas correspondientes a la semana
+1</span></a>). La fuente de esa web es un documento Markdown
+que puedes encontrar en el repositorio de este taller, o en tu fork (ver por
+ejemplo <a class="reference external" href="https://github.com/uibcdf/Taller-Python/blob/main/semana_1/preguntas.md">el fichero “preguntas.md” de la primera semana en el repositorio del
+taller</a>).</p>
+<p>Para contestarlas puedes proceder de dos maneras distintas.</p>
+<section id="en-la-web-de-tu-fork-de-este-repositorio">
+<h3>En la web de tu fork de este repositorio<a class="headerlink" href="#en-la-web-de-tu-fork-de-este-repositorio" title="Enlace permanente a este encabezado">#</a></h3>
+<ol class="arabic simple">
+<li><p>Si no lo has hecho ya, crea tu cuenta en GitHub y haz tu propio fork del repositorio del taller.
+Encontrarás instrucciones para ello en <a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">esta página</span></a>.</p></li>
+<li><p>Accede con tu navegador a la web de tu fork del repositorio del taller.</p></li>
+<li><p>Navega en los ficheros de tu fork hasta la semana cuyas respuestas quieres contestar.</p></li>
+<li><p>Añade un nuevo fichero con el nombre “mis_respuestas.md” haciendo click en el botón “Add file”.</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/add_file_in_fork.png" src="../../_images/add_file_in_fork.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>En otra pestaña del navegador, abre el fichero llamado “preguntas.md” de la
+semana cuyas respuestas quieres contestar. Y activando la vista “Code” del
+fichero, selecciona y copia todo el texto.</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/code_en_preguntas.png" src="../../_images/code_en_preguntas.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Copia el texto copiado en tu nuevo fichero “mis_respuestas.md”.</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/copia_texto_mis_respuestas.png" src="../../_images/copia_texto_mis_respuestas.png" />
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Edita el texto de tu fichero “mis_respuestas.md” para incluir tu respuesta a cada pregunta.</p></li>
+<li><p>Registra los cambios haciendo con el botón verde “Commit changes…”.
+Introduce el título de tu “commit” (registro de cambios) y una descripción
+de los cambios. A continuación haz click en el botón verde “Commit changes” para registrar los cambios.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/commit.png"><img alt="../../_images/commit.png" src="../../_images/commit.png" style="width: 60%;" /></a>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>Listo! Ya tienes tu nuevo documento “mis_respuestas.md” guardado en tu fork
+del repositorio. Podrás editarlo las veces que quieras haciendo click en el
+botón del lápiz de la web del fichero. No olvides registrar los cambios con
+el botón “Commit changes…” (paso 8).</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/edit.png" src="../../_images/edit.png" />
+</figure>
+</section>
+<section id="en-tu-clon-local-de-tu-fork-de-este-repositorio">
+<h3>En tu clon local de tu fork de este repositorio<a class="headerlink" href="#en-tu-clon-local-de-tu-fork-de-este-repositorio" title="Enlace permanente a este encabezado">#</a></h3>
+<ol class="arabic simple">
+<li><p>Si no lo has hecho ya, crea tu cuenta en GitHub, haz tu propio fork del
+repositorio del taller y clónalo localmente en tu computadora. Encontrarás
+instrucciones para ello en <a class="reference internal" href="../otras_herramientas/github/github.html"><span class="doc std std-doc">esta página</span></a>.</p></li>
+<li><p>Navega en el sistema de ficheros de tu sistema operativo hasta el directorio
+del clon local de tu fork del repositorio de este taller.</p></li>
+<li><p>Entra en el directorio de la semana cuyas preguntas quieres responder.</p></li>
+<li><p>Copia el fichero “preguntas.md” y renombra la copia como “mis_respuestas.md”</p></li>
+<li><p>Edita el nuevo fichero “mis_respuestas.md” y contesta las preguntas de la semana.</p></li>
+<li><p>Pídele a Git que añada el fichero a su lista de rastreo (<a class="reference internal" href="../otras_herramientas/git/git.html"><span class="doc std std-doc">aquí</span></a> puedes encontrar ayuda):</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>--all
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Compromete los cambios (<a class="reference internal" href="../otras_herramientas/git/git.html"><span class="doc std std-doc">aquí</span></a> puedes encontrar ayuda):</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;He contestado a las respuestas semanales&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Y finalmente empuja los cambios a tu fork en la web de GitHub del repositorio de este taller ([aquí][otras_herramientas_git.md] puedes encontrar ayuda):</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Comprueba en la web de GitHub de tu fork que efectivamente aparece tu nuevo fichero “mis_respuestas.md”.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../semana_10/recursos_adicionales.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Recursos adicionales</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../python/python.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Cómo instalar y trabajar con Python</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-repositorio-como-instrumento-con-el-que-interaccionar">El repositorio como instrumento con el que interaccionar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crea-tu-usuario-en-github">Crea tu usuario en GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-un-fork-de-este-repositorio">Haz un fork de este repositorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-tu-primer-clon-de-tu-repositorio-fork">Haz tu primer clon de tu repositorio fork</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haz-tantos-clones-de-tu-repositorio-como-necesites">Haz tantos clones de tu repositorio como necesites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-repositorio-como-foro-y-punto-de-encuentro">El repositorio como foro y punto de encuentro</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-tablero-de-problemas">El tablero de problemas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-foro-de-discusiones">El foro de discusiones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-entorno-de-ejecucion-del-repositorio-y-su-material">El entorno de ejecución del repositorio y su material</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crea-un-ambiente-para-trabajar-en-el-taller">Crea un ambiente para trabajar en el taller</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tu-propia-version-local-de-esta-web">Tu propia versión local de esta web</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-material-del-repositorio">El material del repositorio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebooks">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolviendo-el-reto-semanal">Resolviendo el reto semanal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolviendo-las-preguntas-semanales">Resolviendo las preguntas semanales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-web-de-tu-fork-de-este-repositorio">En la web de tu fork de este repositorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-tu-clon-local-de-tu-fork-de-este-repositorio">En tu clon local de tu fork de este repositorio</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

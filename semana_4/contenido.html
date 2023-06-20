@@ -1,0 +1,1409 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Contenido &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'semana_4/contenido';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Reto semanal" href="reto.html" />
+    <link rel="prev" title="Semana 4" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Semana 4</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_5/index.html">Semana 5</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../semana_5/contenido.html">Contenido</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../semana_5/numpy.html">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../semana_5/matplotlib.html">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../semana_5/reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../semana_5/reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../semana_5/reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_5/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_5/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../material_suplementario/otras_herramientas/index.html">Otras herramientas</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/semana_4/contenido.ipynb?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/semana_4/contenido.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contenido</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clases">Clases</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atributos-y-metodos">Atributos y Métodos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podemos-definir-nuestra-propia-clase-de-objetos-con-metodos-y-atributos">¿Podemos definir nuestra propia clase de objetos con métodos y atributos?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulos-y-librerias">Módulos y librerías</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contenido">
+<h1>Contenido<a class="headerlink" href="#contenido" title="Enlace permanente a este encabezado">#</a></h1>
+<center>
+<img src="https://fabienmaussion.info/acinn_python_workshop/figures/xkcd_learning_curve_wa.png" width="600">
+</center>
+<p>Los siguientes contenidos serán presentados en <a class="reference internal" href="sesion.html"><span class="doc std std-doc">una sesión de videoconferencia</span></a>.
+Puedes encontrar en <a class="reference download internal" download="" href="../_downloads/4c8af0d7000ba574fde21a114d9fc527/slides.pdf"><span class="xref download myst">este enlace</span></a> las slides usadas como soporte.</p>
+<section id="clases">
+<h2>Clases<a class="headerlink" href="#clases" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="atributos-y-metodos">
+<h3>Atributos y Métodos<a class="headerlink" href="#atributos-y-metodos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Algo que sí distingue a Python (y a otros) de Fortran o C es que son <a class="reference external" href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos">lenguajes orientados a objetos</a>. <a class="reference external" href="https://www.desarrolloweb.com/articulos/499.php">El uso de objetos hace que un lenguage resulte más intuitivo para el programador amateur</a>. Además los objetos pueden contener tener otros objetos como atributos y métodos. Esto simplifica mucho la organización de la información y hace de Python un lenguage compacto y sencillo. Debes de comenzar a apreciar la simplicidad como principio que guíe tus lineas de código, joven padawan. Ya estás preparado para instruirte en los <a class="reference external" href="https://www.python.org/dev/peps/pep-0020/">principios Zen de python</a>.</p>
+<p>Ya podemos ver, por ejemplo, que los objetos presentados en secciones anteriores no son simples variables definidas como la combinación de un “nombre de variable” y “valor de variable”, sino que tienen asociados atributos (características almacenadas en forma de objetos) y métodos (funciones). Para ver qué cosas tiene un objeto podemos emplear método <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">palabra</span> <span class="o">=</span> <span class="s1">&#39;otorrinolaringólogo&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">palabra</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__contains__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__getitem__&#39;,
+ &#39;__getnewargs__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__iter__&#39;,
+ &#39;__le__&#39;,
+ &#39;__len__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__mod__&#39;,
+ &#39;__mul__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rmod__&#39;,
+ &#39;__rmul__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;capitalize&#39;,
+ &#39;casefold&#39;,
+ &#39;center&#39;,
+ &#39;count&#39;,
+ &#39;encode&#39;,
+ &#39;endswith&#39;,
+ &#39;expandtabs&#39;,
+ &#39;find&#39;,
+ &#39;format&#39;,
+ &#39;format_map&#39;,
+ &#39;index&#39;,
+ &#39;isalnum&#39;,
+ &#39;isalpha&#39;,
+ &#39;isascii&#39;,
+ &#39;isdecimal&#39;,
+ &#39;isdigit&#39;,
+ &#39;isidentifier&#39;,
+ &#39;islower&#39;,
+ &#39;isnumeric&#39;,
+ &#39;isprintable&#39;,
+ &#39;isspace&#39;,
+ &#39;istitle&#39;,
+ &#39;isupper&#39;,
+ &#39;join&#39;,
+ &#39;ljust&#39;,
+ &#39;lower&#39;,
+ &#39;lstrip&#39;,
+ &#39;maketrans&#39;,
+ &#39;partition&#39;,
+ &#39;removeprefix&#39;,
+ &#39;removesuffix&#39;,
+ &#39;replace&#39;,
+ &#39;rfind&#39;,
+ &#39;rindex&#39;,
+ &#39;rjust&#39;,
+ &#39;rpartition&#39;,
+ &#39;rsplit&#39;,
+ &#39;rstrip&#39;,
+ &#39;split&#39;,
+ &#39;splitlines&#39;,
+ &#39;startswith&#39;,
+ &#39;strip&#39;,
+ &#39;swapcase&#39;,
+ &#39;title&#39;,
+ &#39;translate&#39;,
+ &#39;upper&#39;,
+ &#39;zfill&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Esa lista que arroja el método <code class="docutils literal notranslate"><span class="pre">dir</span></code> es el conjunto de métodos y atributos que la variable palabra, como objeto de clase “cadena de caracteres (str)”, contiene. Aquellos elementos de la lista que comienzan y terminan con dos guiones bajos, “__”, son elementos de utilidad interna y privada para Python (no fueron implementados apriori como funcionalidad para el usuario). Si, pero te estarás diciendo: «qué son esos elementos???». Todos estos elementos almacenan información (atributos) o funciones (métodos) que cuelgan del objeto “palabra” y a los cuales puedes acceder mediante el uso de un punto “.”:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># El atributo __class__ está presente en todos los objetos y almacena el nombre del tipo de la variable:</span>
+<span class="n">palabra</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># El método __sizeof__() está también presente en todos los objetos y calcula su tamaño en memoria</span>
+<span class="n">palabra</span><span class="o">.</span><span class="n">__sizeof__</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>92
+</pre></div>
+</div>
+</div>
+</div>
+<p>Habrás adivinado gracias a estas dos últimas celdas cúal es la diferencia invocando atributos o métodos. Un método necesita invocarse con paréntesis ya que es una función que podría tener argumentos de entrada -veremos esto más adelante-.</p>
+<p>También en este punto te preguntarás, pero y cómo sabes qué hace y es cada cosa? Fácilmente:</p>
+<ol class="arabic simple">
+<li><p>La documentación de Python y sus librerías siempre es muy útil: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str">web oficial de Python 3 en su sección sobre tipos str</a></p></li>
+<li><p>La comunidad de usuarios y el número de foros es enorme. Segúramente alguien ya se preguntó lo mismo que tu y otro le contestó: <a class="reference external" href="https://www.google.com.mx/search?q=%C2%BFQu%C3%A9+metodos+de+un+objeto+str+en+python%3F&amp;">búsqueda en google</a></p></li>
+<li><p>El método <code class="docutils literal notranslate"><span class="pre">help</span></code> resulta de mucha ayuda</p></li>
+</ol>
+<p>Para ilustrar como funciona <code class="docutils literal notranslate"><span class="pre">help</span></code> y sin salir del notebook puedes ver qué documentación se esconde por ejemplo detrás de los siguientes elementos de la lista anterior de atributos y métodos: <code class="docutils literal notranslate"><span class="pre">__sizeof__</span></code>, <code class="docutils literal notranslate"><span class="pre">endswith</span></code> y <code class="docutils literal notranslate"><span class="pre">capitalize</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">palabra</span><span class="o">.</span><span class="n">__sizeof__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function __sizeof__:
+
+__sizeof__() method of builtins.str instance
+    Return the size of the string in memory, in bytes.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">palabra</span><span class="o">.</span><span class="n">endswith</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function endswith:
+
+endswith(...) method of builtins.str instance
+    S.endswith(suffix[, start[, end]]) -&gt; bool
+    
+    Return True if S ends with the specified suffix, False otherwise.
+    With optional start, test S beginning at that position.
+    With optional end, stop comparing S at that position.
+    suffix can also be a tuple of strings to try.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">palabra</span><span class="o">.</span><span class="n">capitalize</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function capitalize:
+
+capitalize() method of builtins.str instance
+    Return a capitalized version of the string.
+    
+    More specifically, make the first character have upper case and the rest lower
+    case.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vemos por ejemplo que <code class="docutils literal notranslate"><span class="pre">endswith</span></code> es un método que tiene argumentos de entrada, un sufijo en este caso, y devuelve el valor Verdadero (True) si el valor de la variable cadena de caracteres termina con ese sufijo y Falso (False) si no.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">palabra</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;logo&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">palabra</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;ble&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<p>O que el método <code class="docutils literal notranslate"><span class="pre">capitalize</span></code> no tiene argumentos de entrada y devuelve la cadena con el primer caracter en mayúscula y el resto en minúsculas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">palabra</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">palabra</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>otorrinolaringólogo
+Otorrinolaringólogo
+</pre></div>
+</div>
+</div>
+</div>
+<p>Por último podemos añadir que en este punto del notebook ya hemos visto que existen métodos propios de Python y ajenos a cualquier objeto como <code class="docutils literal notranslate"><span class="pre">dir</span></code>, <code class="docutils literal notranslate"><span class="pre">print</span></code>, <code class="docutils literal notranslate"><span class="pre">help</span></code> o <code class="docutils literal notranslate"><span class="pre">len</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">palabra</span><span class="o">.</span><span class="n">capitalize</span><span class="p">(),</span><span class="s1">&#39;tiene&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">palabra</span><span class="p">),</span><span class="s1">&#39;letras&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Otorrinolaringólogo tiene 19 letras
+</pre></div>
+</div>
+</div>
+</div>
+<p>Las listas, las tuplas, los diccionarios… también tienen sus propios atributos y métodos. Por ejemplo, tomando el objeto de la sección anterior <code class="docutils literal notranslate"><span class="pre">un_diccionario</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">un_diccionario</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;hello&#39;</span><span class="p">:</span> <span class="s1">&#39;hola&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">:</span> <span class="s1">&#39;manzana&#39;</span><span class="p">,</span> <span class="s1">&#39;house&#39;</span><span class="p">:</span> <span class="s1">&#39;casa&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">un_diccionario</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># Este método da la lista de claves</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;hello&#39;, &#39;apple&#39;, &#39;house&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">un_diccionario</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># Este método da la lista de claves</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;hello&#39;, &#39;apple&#39;, &#39;house&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">un_diccionario</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;house&#39;</span><span class="p">)</span> <span class="c1"># Este método saca un item del diccionario</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;casa&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">un_diccionario</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;hello&#39;: &#39;hola&#39;, &#39;apple&#39;: &#39;manzana&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="podemos-definir-nuestra-propia-clase-de-objetos-con-metodos-y-atributos">
+<h2>¿Podemos definir nuestra propia clase de objetos con métodos y atributos?<a class="headerlink" href="#podemos-definir-nuestra-propia-clase-de-objetos-con-metodos-y-atributos" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para consolidar la <a class="reference external" href="https://www.desarrolloweb.com/articulos/499.php">comprensión en la diferencia entre métodos y atributos, y entender la trascendencia de poder definir «clases de objetos»</a> veamos cómo podemos definir nuestra propia clase.</p>
+<p>Una clase es la plantilla de un objeto. Las clases se definen con métodos y atributos, propios de esa clase (valga la redundancia). Y son realmente útiles.</p>
+<p>Supongamos que defino la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code>. Átomos puede haber de muchos: de naturaleza distinta, con distinta carga, radio de Van der Waals, peso atómico… pero todos tienen esas propiedades que puedo definir como atributos comunes en la plantilla que representa la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">átomo</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span>  <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hemos comenzado definiendo los tres atributos de <code class="docutils literal notranslate"><span class="pre">átomo</span></code> (tipo, radio y carga) con valor <code class="docutils literal notranslate"><span class="pre">None</span></code>. Algo todavía poco útil, pero ya podemos crear átomos haciendo uso de <code class="docutils literal notranslate"><span class="pre">átomo</span></code> como plantilla:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">()</span>
+<span class="n">at2</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">()</span>
+<span class="n">at3</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">at1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>__main__.átomo
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">at1</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">at2</span><span class="o">.</span><span class="n">radio</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">at3</span><span class="o">.</span><span class="n">carga</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+None
+None
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hagamos ahora algo más útil. Vamos a generar la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code> con un argumento de entrada que será el <code class="docutils literal notranslate"><span class="pre">tipo</span></code> de átomo. Y el resto de atributos, <code class="docutils literal notranslate"><span class="pre">radio</span></code> y <code class="docutils literal notranslate"><span class="pre">carga</span></code>, serán adjudicados al inicializar un objeto de clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code> dependiendo de su tipo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">átomo</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tipo</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span>  <span class="o">=</span> <span class="n">tipo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="mf">2.5</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="mf">4.0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">(</span><span class="n">tipo</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+<span class="n">at2</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span><span class="o">.</span><span class="n">radio</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at2</span><span class="o">.</span><span class="n">radio</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Por último y para que <code class="docutils literal notranslate"><span class="pre">átomo</span></code> no sea únicamente un conjunto de atributos, incluyamos un método. Un método que sea el cálculo del volumen del átomo según su radio.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">átomo</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tipo</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span>  <span class="o">=</span> <span class="n">tipo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="mf">2.5</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="mf">4.0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">carga</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
+
+    <span class="k">def</span> <span class="nf">volumen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159265359</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">4.0</span><span class="o">/</span><span class="mf">3.0</span><span class="p">)</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">radio</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span> <span class="o">=</span> <span class="n">átomo</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span><span class="o">.</span><span class="n">radio</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span><span class="o">.</span><span class="n">volumen</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>65.44984694979166
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span><span class="o">.</span><span class="n">radio</span> <span class="o">=</span> <span class="mf">3.0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">at1</span><span class="o">.</span><span class="n">volumen</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>113.09733552924
+</pre></div>
+</div>
+</div>
+</div>
+<p>En las líneas de código empleadas para definir la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code> habrás identificado varias cosas desconocidas para ti, aunque su significado puede ser intuitivo. Es el caso de las órdenes <code class="docutils literal notranslate"><span class="pre">def</span></code> o <code class="docutils literal notranslate"><span class="pre">if</span></code>, o los términos <code class="docutils literal notranslate"><span class="pre">class</span></code> o <code class="docutils literal notranslate"><span class="pre">self</span></code>. Cómo se define una clase, en profundidad, es materia de un nivel un poco más avanzado y escapa al propósito de este notebook. Pero de la orden <code class="docutils literal notranslate"><span class="pre">if</span></code> si vamos a hablar en la sección siguiente ya que es un elemento básico y común de todo lenguaje de programación.</p>
+</section>
+<section id="modulos-y-librerias">
+<h2>Módulos y librerías<a class="headerlink" href="#modulos-y-librerias" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Por último y para concluir esta introducción a Python, es importante que comprendas qué es un módulo, qué es una librería y cómo se usan.</p>
+<p>Un módulo es una pieza de código que encapsulamos en un fichero aislado porque la vamos a usar con frecuencia de manera independiente o como elemento incluido en otros programas. Para comprender esto vamos a crear y a usar nuestro propio módulo.</p>
+<p>Vamos a poner la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code>, definida anteriormente, en un fichero de texto que llamaremos <code class="docutils literal notranslate"><span class="pre">atomizador.py</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_módulo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;atomizador.py&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_código</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\</span>
+<span class="s2">class átomo():</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">Clase que representa un átomo con su tipo, radio, carga y volumen.</span><span class="se">\&quot;\&quot;\&quot;\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> def __init__(self, tipo = None):</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.tipo  = tipo</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.radio = None</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.carga = None</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> if tipo == &#39;A&#39;:</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.radio = 2.5</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.carga = 1</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> if tipo == &#39;B&#39;:</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.radio = 4.0</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> self.carga = -2</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> def volumen(self):</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> </span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">Función de la clase átomo que calcula el volumen a partir del atributo radio.</span><span class="se">\&quot;\&quot;\&quot;\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> pi = 3.14159265359</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="se">\t</span><span class="s2"> </span><span class="se">\t</span><span class="s2"> return (4.0/3.0)*pi*self.radio**3</span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">mi_código</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>class átomo():
+ 	 &quot;&quot;&quot;Clase que representa un átomo con su tipo, radio, carga y volumen.&quot;&quot;&quot;
+ 
+ 	 def __init__(self, tipo = None):
+ 
+ 	 	 self.tipo  = tipo
+ 	 	 self.radio = None
+ 	 	 self.carga = None
+ 
+ 	 	 if tipo == &#39;A&#39;:
+ 	 	 	 self.radio = 2.5
+ 	 	 	 self.carga = 1
+ 
+ 	 	 if tipo == &#39;B&#39;:
+ 	 	 	 self.radio = 4.0
+ 	 	 	 self.carga = -2
+ 
+ 	 def volumen(self):
+ 	 	 &quot;&quot;&quot;Función de la clase átomo que calcula el volumen a partir del atributo radio.&quot;&quot;&quot;
+ 	 	 pi = 3.14159265359
+ 	 	 return (4.0/3.0)*pi*self.radio**3
+ 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_módulo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mi_código</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>516
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_módulo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">mi_módulo</span><span class="p">,</span> <span class="n">mi_código</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Puedes ver en el navegador de ficheros que existe “atomizador.py”. Puedes abrirlo en Jupyter Lab, o salir a una terminal o a tu navegador de ficheros del sistema operativo, y ver su contenido. En este punto debes estar pensando que quizá hubiera sido más facil crear este fichero fuera del notebook, haciendo uso de tu editor de texto habitual. Estás en lo cierto, lo hemos creado en el notebook
+únicamente como ejemplo adicional de escritura de ficheros.</p>
+<p>Bien, ya tenemos el fichero “atomizador.py” con un bloque de código. Lo podemos llamar módulo porque la estrategia de trabajo que estamos adoptando es <strong>modular</strong>. Ponemos código perfectamente funcional y documentado en módulos que podrán ser usados como bloques de construcción reusables, como si fueran los ladrillos de un muro que pudieras emplear para hacer estructuras más grandes. Cuando además un conjunto de módulos, están organizados en una misma carpeta con una cierta estructura que les da entidad de grupo, hablamos de librería.</p>
+<p>Un módulo, o librería, se puede “cargar” en cualquier momento con la orden <code class="docutils literal notranslate"><span class="pre">import</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">atomizador</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">atomizador</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__builtins__&#39;,
+ &#39;__cached__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__file__&#39;,
+ &#39;__loader__&#39;,
+ &#39;__name__&#39;,
+ &#39;__package__&#39;,
+ &#39;__spec__&#39;,
+ &#39;átomo&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Probablemente hayas advertido que en la definición de la clase <code class="docutils literal notranslate"><span class="pre">átomo</span></code> hemos incluido un par de lineas con texto entre triples comillas dobles. Así: <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;texto&quot;&quot;&quot;</span></code>. Mira para lo que sirvieron:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">atomizador</span><span class="o">.</span><span class="n">átomo</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on class átomo in module atomizador:
+
+class átomo(builtins.object)
+ |  átomo(tipo=None)
+ |  
+ |  Clase que representa un átomo con su tipo, radio, carga y volumen.
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self, tipo=None)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  volumen(self)
+ |      Función de la clase átomo que calcula el volumen a partir del atributo radio.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">atomizador</span><span class="o">.</span><span class="n">átomo</span><span class="o">.</span><span class="n">volumen</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function volumen in module atomizador:
+
+volumen(self)
+    Función de la clase átomo que calcula el volumen a partir del atributo radio.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora vamos a usar el módulo <code class="docutils literal notranslate"><span class="pre">atomizador</span></code>para concluir el ejemplo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">átomo1</span> <span class="o">=</span> <span class="n">atomizador</span><span class="o">.</span><span class="n">átomo</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">átomo1</span><span class="o">.</span><span class="n">volumen</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>65.44984694979166
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">atomizador</span><span class="p">,</span> <span class="n">átomo1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Acabamos de borrar los objetos <code class="docutils literal notranslate"><span class="pre">atomizador</span></code> y <code class="docutils literal notranslate"><span class="pre">átomo</span></code> para poder continuar de manera limpia.
+Veamos ahora que podemos también importar un módulo, o librería, “cargándolo” con un alias.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">atomizador</span> <span class="k">as</span> <span class="nn">creador_de_átomos_marca_ACME</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">átomo1</span> <span class="o">=</span> <span class="n">creador_de_átomos_marca_ACME</span><span class="o">.</span><span class="n">átomo</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">átomo1</span><span class="o">.</span><span class="n">volumen</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>65.44984694979166
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">átomo1</span><span class="p">,</span> <span class="n">creador_de_átomos_marca_ACME</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>O podemos importar clases, métodos u otros objetos específicos de un módulo o de una librería:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atomizador</span> <span class="kn">import</span> <span class="n">átomo</span> <span class="k">as</span> <span class="n">átomo_marca_ACME</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">átomo1</span> <span class="o">=</span> <span class="n">átomo_marca_ACME</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">átomo1</span><span class="o">.</span><span class="n">volumen</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>65.44984694979166
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">átomo</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Borremos por último el fichero “atomizador.py” haciendo uso de la librería <code class="docutils literal notranslate"><span class="pre">os</span></code> como vimos anteriormente:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">remove</span> <span class="k">as</span> <span class="n">borro_fichero</span>
+<span class="n">borro_fichero</span><span class="p">(</span><span class="s1">&#39;atomizador.py&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">
+<h2>Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a><a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para centralizar esas dudas técnicas sobre el tema de este notebook o proponer soluciones o sugerencias más técnicas que queremos encontrar en el futuro comentadas y visibles para todos, haz uso del siguiente canal:</p>
+<p><a class="reference external" href="https://github.com/uibcdf/Academia/issues/18">Foro Técnico: Programando en Python</a></p>
+</section>
+<section id="mas-recursos-utiles-a-class-anchor-id-recursos-a">
+<h2>Más recursos útiles <a class="anchor" id="recursos"></a><a class="headerlink" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El propósito de este notebook es ser un documento únicamente introductorio. Puedes encontrar -o contribuir añadiendo- más información útil en el siguiente listado:</p>
+<section id="documentacion-a-class-anchor-id-documentacion-a">
+<h3>Documentación <a class="anchor" id="documentacion"></a><a class="headerlink" href="#documentacion-a-class-anchor-id-documentacion-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://www.python.org/<br />
+https://realpython.com/<br />
+https://docs.python-guide.org/<br />
+https://wiki.python.org/moin/SpanishLanguage<br />
+http://www.scipy-lectures.org/intro/intro.html
+https://fabienmaussion.info/acinn_python_workshop/</p>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">
+<h3>Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a><a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://realpython.com/start-here/<br />
+https://www.programiz.com/python-programming<br />
+http://www.openbookproject.net/books/bpp4awd/<br />
+http://www.openbookproject.net/books/pythonds/<br />
+http://www.openbookproject.net/books/pp4awdds/<br />
+http://openbookproject.net/thinkcs/python/english3e/<br />
+https://www.w3schools.com/python/<br />
+https://www.python.org/about/gettingstarted/<br />
+https://docs.python.org/3/tutorial/<br />
+http://docs.python.org.ar/tutorial/<br />
+http://swcarpentry.github.io/python-novice-inflammation/<br />
+https://www.datacamp.com/community/open-courses?tag=python<br />
+https://www.datacamp.com/community/tutorials?tag=python<br />
+https://realpython.com/tutorials/python/<br />
+https://www.learnpython.org/<br />
+https://www.datacamp.com/courses/intro-to-python-for-data-science<br />
+https://docs.python-guide.org/intro/learning/<br />
+https://www.codecademy.com/learn/learn-python<br />
+https://pythonprogramming.net/<br />
+http://www.scipy-lectures.org/<br />
+https://geekytheory.com/curso/python-3<br />
+https://www.learnpython.org/es/<br />
+https://www.learnpython.org/<br />
+http://www.iac.es/sieinvens/python-course/index.html
+https://github.com/damianavila/Python-Cientifico-HCC/blob/master/1_Python_Cientifico_Intro.ipynb</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Semana 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reto.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Reto semanal</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clases">Clases</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atributos-y-metodos">Atributos y Métodos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podemos-definir-nuestra-propia-clase-de-objetos-con-metodos-y-atributos">¿Podemos definir nuestra propia clase de objetos con métodos y atributos?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulos-y-librerias">Módulos y librerías</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

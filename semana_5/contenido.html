@@ -1,0 +1,1158 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Contenido &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'semana_5/contenido';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="NumPy" href="numpy.html" />
+    <link rel="prev" title="Semana 5" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_4/index.html">Semana 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Semana 5</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Contenido</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="numpy.html">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matplotlib.html">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../material_suplementario/otras_herramientas/index.html">Otras herramientas</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/semana_5/contenido.ipynb?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/semana_5/contenido.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contenido</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-ficheros">Gestión de ficheros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">Numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">Matplotlib</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contenido">
+<h1>Contenido<a class="headerlink" href="#contenido" title="Enlace permanente a este encabezado">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> --no-display
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">with</span> <span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cosas que puedes hacer en Python cuando aprendes.&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Días&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Número de cosas&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/82ff2d974c218c678da176164bef4a1eba685549670cecf782e4b72a0ef41496.png" src="../_images/82ff2d974c218c678da176164bef4a1eba685549670cecf782e4b72a0ef41496.png" />
+</div>
+</div>
+<p>Los siguientes contenidos serán presentados en <span class="xref myst">una sesión de videoconferencia</span>.
+Puedes encontrar en <a class="reference download internal" download="" href="../_downloads/3bfc73b103bc2004bb7e1f035760a8a2/slides.pdf"><span class="xref download myst">este enlace</span></a> las slides usadas como soporte.</p>
+<section id="gestion-de-ficheros">
+<h2>Gestión de ficheros<a class="headerlink" href="#gestion-de-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Veamos ahora como puedo abrir un fichero para escribir información en disco.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichero_de_prueba.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="c1"># &#39;w&#39; especifica que el fichero permite la escritura</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">mi_fichero</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_io.TextIOWrapper
+</pre></div>
+</div>
+</div>
+</div>
+<p>Si estás ejecutando este notebook de manera local con tu jupyter lab, verás que en el navegador de archivos de tu izquierda acaba de aparecer el nuevo fichero.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;hola!</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># \n sirve como finalizar linea</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;esta es la segunda linea</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>25
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">mi_fichero</span></code> es un objeto definido por Python para entrada y salida de datos. Tiene métodos como <code class="docutils literal notranslate"><span class="pre">write()</span></code> cuya función es operar con el objeto. En este caso <code class="docutils literal notranslate"><span class="pre">write()</span></code> escribe en el fichero y devuelve como salida la cantidad de bytes escritos. Otro método que necesitarás es <code class="docutils literal notranslate"><span class="pre">close()</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Está el fichero cerrado?&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mi_fichero</span><span class="o">.</span><span class="n">closed</span><span class="p">)</span> <span class="c1"># `close` es un atributo que registra True o False según esté cerrado o abierto.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Está el fichero cerrado?
+True
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora abriremos el fichero y lo leeremos. Pero antes, vamos a borrar mi fichero para hacer el caso más realista, lo habitual es que leamos un fichero pre-existente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">mi_fichero</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Protegemos el fichero contra escritura declarándolo de lectura con &#39;r&#39;</span>
+<span class="n">mi_fichero</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichero_de_prueba.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">contenido</span> <span class="o">=</span> <span class="n">mi_fichero</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">contenido</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hola!
+esta es la segunda linea
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span><span class="p">(</span><span class="n">mi_fichero</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_fichero</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichero_de_prueba.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">primera_linea</span> <span class="o">=</span> <span class="n">mi_fichero</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">segunda_linea</span> <span class="o">=</span> <span class="n">mi_fichero</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">mi_fichero</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">del</span><span class="p">(</span><span class="n">mi_fichero</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">segunda_linea</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>esta es la segunda linea
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ya podemos antes de concluir esta sección borrar el fichero. Esto lo puedes hacer de dos maneras:</p>
+<ul class="simple">
+<li><p>Puedes acudir al navegador de archivos de Jupyter y con el botón derecho sobre “fichero_de_prueba.txt” seleccionar “Delete”.</p></li>
+<li><p>Puedes importar la librería de python <code class="docutils literal notranslate"><span class="pre">os</span></code> y usar uno de sus métodos cuya función es borrar ficheros del disco duro. Veamos este ejemplo en las siguientes celdas.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">os</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;CLD_CONTINUED&#39;,
+ &#39;CLD_DUMPED&#39;,
+ &#39;CLD_EXITED&#39;,
+ &#39;CLD_KILLED&#39;,
+ &#39;CLD_STOPPED&#39;,
+ &#39;CLD_TRAPPED&#39;,
+ &#39;DirEntry&#39;,
+ &#39;EFD_CLOEXEC&#39;,
+ &#39;EFD_NONBLOCK&#39;,
+ &#39;EFD_SEMAPHORE&#39;,
+ &#39;EX_CANTCREAT&#39;,
+ &#39;EX_CONFIG&#39;,
+ &#39;EX_DATAERR&#39;,
+ &#39;EX_IOERR&#39;,
+ &#39;EX_NOHOST&#39;,
+ &#39;EX_NOINPUT&#39;,
+ &#39;EX_NOPERM&#39;,
+ &#39;EX_NOUSER&#39;,
+ &#39;EX_OK&#39;,
+ &#39;EX_OSERR&#39;,
+ &#39;EX_OSFILE&#39;,
+ &#39;EX_PROTOCOL&#39;,
+ &#39;EX_SOFTWARE&#39;,
+ &#39;EX_TEMPFAIL&#39;,
+ &#39;EX_UNAVAILABLE&#39;,
+ &#39;EX_USAGE&#39;,
+ &#39;F_LOCK&#39;,
+ &#39;F_OK&#39;,
+ &#39;F_TEST&#39;,
+ &#39;F_TLOCK&#39;,
+ &#39;F_ULOCK&#39;,
+ &#39;GenericAlias&#39;,
+ &#39;Mapping&#39;,
+ &#39;MutableMapping&#39;,
+ &#39;NGROUPS_MAX&#39;,
+ &#39;O_ACCMODE&#39;,
+ &#39;O_APPEND&#39;,
+ &#39;O_ASYNC&#39;,
+ &#39;O_CLOEXEC&#39;,
+ &#39;O_CREAT&#39;,
+ &#39;O_DIRECT&#39;,
+ &#39;O_DIRECTORY&#39;,
+ &#39;O_DSYNC&#39;,
+ &#39;O_EXCL&#39;,
+ &#39;O_FSYNC&#39;,
+ &#39;O_LARGEFILE&#39;,
+ &#39;O_NDELAY&#39;,
+ &#39;O_NOATIME&#39;,
+ &#39;O_NOCTTY&#39;,
+ &#39;O_NOFOLLOW&#39;,
+ &#39;O_NONBLOCK&#39;,
+ &#39;O_RDONLY&#39;,
+ &#39;O_RDWR&#39;,
+ &#39;O_RSYNC&#39;,
+ &#39;O_SYNC&#39;,
+ &#39;O_TRUNC&#39;,
+ &#39;O_WRONLY&#39;,
+ &#39;POSIX_FADV_DONTNEED&#39;,
+ &#39;POSIX_FADV_NOREUSE&#39;,
+ &#39;POSIX_FADV_NORMAL&#39;,
+ &#39;POSIX_FADV_RANDOM&#39;,
+ &#39;POSIX_FADV_SEQUENTIAL&#39;,
+ &#39;POSIX_FADV_WILLNEED&#39;,
+ &#39;POSIX_SPAWN_CLOSE&#39;,
+ &#39;POSIX_SPAWN_DUP2&#39;,
+ &#39;POSIX_SPAWN_OPEN&#39;,
+ &#39;PRIO_PGRP&#39;,
+ &#39;PRIO_PROCESS&#39;,
+ &#39;PRIO_USER&#39;,
+ &#39;P_ALL&#39;,
+ &#39;P_NOWAIT&#39;,
+ &#39;P_NOWAITO&#39;,
+ &#39;P_PGID&#39;,
+ &#39;P_PID&#39;,
+ &#39;P_WAIT&#39;,
+ &#39;PathLike&#39;,
+ &#39;RTLD_DEEPBIND&#39;,
+ &#39;RTLD_GLOBAL&#39;,
+ &#39;RTLD_LAZY&#39;,
+ &#39;RTLD_LOCAL&#39;,
+ &#39;RTLD_NODELETE&#39;,
+ &#39;RTLD_NOLOAD&#39;,
+ &#39;RTLD_NOW&#39;,
+ &#39;R_OK&#39;,
+ &#39;SCHED_BATCH&#39;,
+ &#39;SCHED_FIFO&#39;,
+ &#39;SCHED_IDLE&#39;,
+ &#39;SCHED_OTHER&#39;,
+ &#39;SCHED_RESET_ON_FORK&#39;,
+ &#39;SCHED_RR&#39;,
+ &#39;SEEK_CUR&#39;,
+ &#39;SEEK_END&#39;,
+ &#39;SEEK_SET&#39;,
+ &#39;SPLICE_F_MORE&#39;,
+ &#39;SPLICE_F_MOVE&#39;,
+ &#39;SPLICE_F_NONBLOCK&#39;,
+ &#39;ST_APPEND&#39;,
+ &#39;ST_MANDLOCK&#39;,
+ &#39;ST_NOATIME&#39;,
+ &#39;ST_NODEV&#39;,
+ &#39;ST_NODIRATIME&#39;,
+ &#39;ST_NOEXEC&#39;,
+ &#39;ST_NOSUID&#39;,
+ &#39;ST_RDONLY&#39;,
+ &#39;ST_RELATIME&#39;,
+ &#39;ST_SYNCHRONOUS&#39;,
+ &#39;ST_WRITE&#39;,
+ &#39;TMP_MAX&#39;,
+ &#39;WCONTINUED&#39;,
+ &#39;WCOREDUMP&#39;,
+ &#39;WEXITED&#39;,
+ &#39;WEXITSTATUS&#39;,
+ &#39;WIFCONTINUED&#39;,
+ &#39;WIFEXITED&#39;,
+ &#39;WIFSIGNALED&#39;,
+ &#39;WIFSTOPPED&#39;,
+ &#39;WNOHANG&#39;,
+ &#39;WNOWAIT&#39;,
+ &#39;WSTOPPED&#39;,
+ &#39;WSTOPSIG&#39;,
+ &#39;WTERMSIG&#39;,
+ &#39;WUNTRACED&#39;,
+ &#39;W_OK&#39;,
+ &#39;XATTR_CREATE&#39;,
+ &#39;XATTR_REPLACE&#39;,
+ &#39;XATTR_SIZE_MAX&#39;,
+ &#39;X_OK&#39;,
+ &#39;_Environ&#39;,
+ &#39;__all__&#39;,
+ &#39;__builtins__&#39;,
+ &#39;__cached__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__file__&#39;,
+ &#39;__loader__&#39;,
+ &#39;__name__&#39;,
+ &#39;__package__&#39;,
+ &#39;__spec__&#39;,
+ &#39;_check_methods&#39;,
+ &#39;_execvpe&#39;,
+ &#39;_exists&#39;,
+ &#39;_exit&#39;,
+ &#39;_fspath&#39;,
+ &#39;_fwalk&#39;,
+ &#39;_get_exports_list&#39;,
+ &#39;_spawnvef&#39;,
+ &#39;_walk&#39;,
+ &#39;_wrap_close&#39;,
+ &#39;abc&#39;,
+ &#39;abort&#39;,
+ &#39;access&#39;,
+ &#39;altsep&#39;,
+ &#39;chdir&#39;,
+ &#39;chmod&#39;,
+ &#39;chown&#39;,
+ &#39;chroot&#39;,
+ &#39;close&#39;,
+ &#39;closerange&#39;,
+ &#39;confstr&#39;,
+ &#39;confstr_names&#39;,
+ &#39;cpu_count&#39;,
+ &#39;ctermid&#39;,
+ &#39;curdir&#39;,
+ &#39;defpath&#39;,
+ &#39;device_encoding&#39;,
+ &#39;devnull&#39;,
+ &#39;dup&#39;,
+ &#39;dup2&#39;,
+ &#39;environ&#39;,
+ &#39;environb&#39;,
+ &#39;error&#39;,
+ &#39;eventfd&#39;,
+ &#39;eventfd_read&#39;,
+ &#39;eventfd_write&#39;,
+ &#39;execl&#39;,
+ &#39;execle&#39;,
+ &#39;execlp&#39;,
+ &#39;execlpe&#39;,
+ &#39;execv&#39;,
+ &#39;execve&#39;,
+ &#39;execvp&#39;,
+ &#39;execvpe&#39;,
+ &#39;extsep&#39;,
+ &#39;fchdir&#39;,
+ &#39;fchmod&#39;,
+ &#39;fchown&#39;,
+ &#39;fdatasync&#39;,
+ &#39;fdopen&#39;,
+ &#39;fork&#39;,
+ &#39;forkpty&#39;,
+ &#39;fpathconf&#39;,
+ &#39;fsdecode&#39;,
+ &#39;fsencode&#39;,
+ &#39;fspath&#39;,
+ &#39;fstat&#39;,
+ &#39;fstatvfs&#39;,
+ &#39;fsync&#39;,
+ &#39;ftruncate&#39;,
+ &#39;fwalk&#39;,
+ &#39;get_blocking&#39;,
+ &#39;get_exec_path&#39;,
+ &#39;get_inheritable&#39;,
+ &#39;get_terminal_size&#39;,
+ &#39;getcwd&#39;,
+ &#39;getcwdb&#39;,
+ &#39;getegid&#39;,
+ &#39;getenv&#39;,
+ &#39;getenvb&#39;,
+ &#39;geteuid&#39;,
+ &#39;getgid&#39;,
+ &#39;getgrouplist&#39;,
+ &#39;getgroups&#39;,
+ &#39;getloadavg&#39;,
+ &#39;getlogin&#39;,
+ &#39;getpgid&#39;,
+ &#39;getpgrp&#39;,
+ &#39;getpid&#39;,
+ &#39;getppid&#39;,
+ &#39;getpriority&#39;,
+ &#39;getresgid&#39;,
+ &#39;getresuid&#39;,
+ &#39;getsid&#39;,
+ &#39;getuid&#39;,
+ &#39;getxattr&#39;,
+ &#39;initgroups&#39;,
+ &#39;isatty&#39;,
+ &#39;kill&#39;,
+ &#39;killpg&#39;,
+ &#39;lchown&#39;,
+ &#39;linesep&#39;,
+ &#39;link&#39;,
+ &#39;listdir&#39;,
+ &#39;listxattr&#39;,
+ &#39;lockf&#39;,
+ &#39;lseek&#39;,
+ &#39;lstat&#39;,
+ &#39;major&#39;,
+ &#39;makedev&#39;,
+ &#39;makedirs&#39;,
+ &#39;minor&#39;,
+ &#39;mkdir&#39;,
+ &#39;mkfifo&#39;,
+ &#39;mknod&#39;,
+ &#39;name&#39;,
+ &#39;nice&#39;,
+ &#39;open&#39;,
+ &#39;openpty&#39;,
+ &#39;pardir&#39;,
+ &#39;path&#39;,
+ &#39;pathconf&#39;,
+ &#39;pathconf_names&#39;,
+ &#39;pathsep&#39;,
+ &#39;pipe&#39;,
+ &#39;pipe2&#39;,
+ &#39;popen&#39;,
+ &#39;posix_fadvise&#39;,
+ &#39;posix_fallocate&#39;,
+ &#39;posix_spawn&#39;,
+ &#39;posix_spawnp&#39;,
+ &#39;pread&#39;,
+ &#39;preadv&#39;,
+ &#39;putenv&#39;,
+ &#39;pwrite&#39;,
+ &#39;pwritev&#39;,
+ &#39;read&#39;,
+ &#39;readlink&#39;,
+ &#39;readv&#39;,
+ &#39;register_at_fork&#39;,
+ &#39;remove&#39;,
+ &#39;removedirs&#39;,
+ &#39;removexattr&#39;,
+ &#39;rename&#39;,
+ &#39;renames&#39;,
+ &#39;replace&#39;,
+ &#39;rmdir&#39;,
+ &#39;scandir&#39;,
+ &#39;sched_get_priority_max&#39;,
+ &#39;sched_get_priority_min&#39;,
+ &#39;sched_getaffinity&#39;,
+ &#39;sched_getparam&#39;,
+ &#39;sched_getscheduler&#39;,
+ &#39;sched_param&#39;,
+ &#39;sched_rr_get_interval&#39;,
+ &#39;sched_setaffinity&#39;,
+ &#39;sched_setparam&#39;,
+ &#39;sched_setscheduler&#39;,
+ &#39;sched_yield&#39;,
+ &#39;sendfile&#39;,
+ &#39;sep&#39;,
+ &#39;set_blocking&#39;,
+ &#39;set_inheritable&#39;,
+ &#39;setegid&#39;,
+ &#39;seteuid&#39;,
+ &#39;setgid&#39;,
+ &#39;setgroups&#39;,
+ &#39;setpgid&#39;,
+ &#39;setpgrp&#39;,
+ &#39;setpriority&#39;,
+ &#39;setregid&#39;,
+ &#39;setresgid&#39;,
+ &#39;setresuid&#39;,
+ &#39;setreuid&#39;,
+ &#39;setsid&#39;,
+ &#39;setuid&#39;,
+ &#39;setxattr&#39;,
+ &#39;spawnl&#39;,
+ &#39;spawnle&#39;,
+ &#39;spawnlp&#39;,
+ &#39;spawnlpe&#39;,
+ &#39;spawnv&#39;,
+ &#39;spawnve&#39;,
+ &#39;spawnvp&#39;,
+ &#39;spawnvpe&#39;,
+ &#39;splice&#39;,
+ &#39;st&#39;,
+ &#39;stat&#39;,
+ &#39;stat_result&#39;,
+ &#39;statvfs&#39;,
+ &#39;statvfs_result&#39;,
+ &#39;strerror&#39;,
+ &#39;supports_bytes_environ&#39;,
+ &#39;supports_dir_fd&#39;,
+ &#39;supports_effective_ids&#39;,
+ &#39;supports_fd&#39;,
+ &#39;supports_follow_symlinks&#39;,
+ &#39;symlink&#39;,
+ &#39;sync&#39;,
+ &#39;sys&#39;,
+ &#39;sysconf&#39;,
+ &#39;sysconf_names&#39;,
+ &#39;system&#39;,
+ &#39;tcgetpgrp&#39;,
+ &#39;tcsetpgrp&#39;,
+ &#39;terminal_size&#39;,
+ &#39;times&#39;,
+ &#39;times_result&#39;,
+ &#39;truncate&#39;,
+ &#39;ttyname&#39;,
+ &#39;umask&#39;,
+ &#39;uname&#39;,
+ &#39;uname_result&#39;,
+ &#39;unlink&#39;,
+ &#39;unsetenv&#39;,
+ &#39;urandom&#39;,
+ &#39;utime&#39;,
+ &#39;wait&#39;,
+ &#39;wait3&#39;,
+ &#39;wait4&#39;,
+ &#39;waitid&#39;,
+ &#39;waitid_result&#39;,
+ &#39;waitpid&#39;,
+ &#39;waitstatus_to_exitcode&#39;,
+ &#39;walk&#39;,
+ &#39;write&#39;,
+ &#39;writev&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function remove in module posix:
+
+remove(path, *, dir_fd=None)
+    Remove a file (same as unlink()).
+    
+    If dir_fd is not None, it should be a file descriptor open to a directory,
+      and path should be relative; path will then be relative to that directory.
+    dir_fd may not be implemented on your platform.
+      If it is unavailable, using it will raise a NotImplementedError.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;fichero_de_prueba.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Si has optado por borrar el fichero haciendo uso de la librería <code class="docutils literal notranslate"><span class="pre">os</span></code>, puedes comprobar que este desapareció del navegador de archivos de Jupyter Lab que se encuentra a la izquierda de este notebook.</p>
+</section>
+<section id="numpy">
+<h2>Numpy<a class="headerlink" href="#numpy" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para introducir Numpy, te sugerimos que sigas el contenido de <a class="reference internal" href="numpy.html"><span class="doc std std-doc">este jupyter notebook</span></a>.</p>
+</section>
+<section id="matplotlib">
+<h2>Matplotlib<a class="headerlink" href="#matplotlib" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para introducir Matplotlib, te sugerimos que sigas el contenido de <a class="reference internal" href="matplotlib.html"><span class="doc std std-doc">este jupyter notebook</span></a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Semana 5</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="numpy.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">NumPy</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-ficheros">Gestión de ficheros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">Numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">Matplotlib</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

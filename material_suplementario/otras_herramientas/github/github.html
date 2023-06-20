@@ -1,0 +1,844 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>GitHub &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'material_suplementario/otras_herramientas/github/github';</script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="Jupyter" href="../jupyter/jupyter.html" />
+    <link rel="prev" title="Git" href="../git/git.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_4/index.html">Semana 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_5/index.html">Semana 5</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../semana_5/contenido.html">Contenido</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/numpy.html">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/matplotlib.html">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../semana_5/reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_5/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_5/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Otras herramientas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../git/git.html">Git</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/material_suplementario/otras_herramientas/github/github.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/material_suplementario/otras_herramientas/github/github.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>GitHub</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-github">¿Qué es GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-crear-una-cuenta-en-github">¿Cómo crear una cuenta en GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-crear-un-nuevo-repositorio">¿Cómo crear un nuevo repositorio?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-hacer-un-fork-de-un-repositorio-en-github">¿Cómo hacer un fork de un repositorio en GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-clonar-un-repositorio-en-tu-computadora">¿Cómo clonar un repositorio en tu computadora?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-trabajar-en-tu-proyecto">¿Cómo trabajar en tu proyecto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-puedes-agregar-tus-cambios-al-repositorio-original">¿Cómo puedes agregar tus cambios al repositorio original?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-comando-gh-nativo-de-github">El comando gh nativo de GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-instalar-el-comando-gh-en-tu-computadora">¿Cómo instalar el comando gh en tu computadora?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones">Dudas, problemas técnicos y soluciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles">Más recursos útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos">Tutoriales, Webinars y cursos gratuitos</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github.png"><img alt="../../../_images/github.png" src="../../../_images/github.png" style="width: 20%;" /></a>
+</figure>
+<br>
+<section class="tex2jax_ignore mathjax_ignore" id="github">
+<h1>GitHub<a class="headerlink" href="#github" title="Enlace permanente a este encabezado">#</a></h1>
+<section id="que-es-github">
+<h2>¿Qué es GitHub?<a class="headerlink" href="#que-es-github" title="Enlace permanente a este encabezado">#</a></h2>
+<p>GitHub es un repositorio central de proyectos en la nube, principalmente de
+software, implementado para el desarrollo en colaboración que opera el
+controlador de versiones Git. En esencia, puedes pensar que GitHub es la
+evolución social de Git, ya que nace para facilitar el intercambio de
+información y colaboración.</p>
+<p>Existen otros repositorios en la nube, como GitLab,
+pero por motivos historicos y por que muchas de las herramientas
+computacionales que usamos son proyectos abiertos en GitHub, es <a class="reference external" href="https://github.com/uibcdf">aquí donde
+tenemos nuestros repositorios</a>.</p>
+<p>GitHub, como cualquier servicio en la nube de centralización de repositorios,
+incluyen herramientas útiles para la comunicación entre los colaboradores: <a class="reference external" href="https://github.com/uibcdf/Taller-Python/issues">un
+panel donde colgar reportes de errores, sugerencias o dudas</a>;
+<a class="reference external" href="https://github.com/uibcdf/Taller-Python/pulse">secciones de visualización del progreso del proyecto</a> <a class="reference external" href="https://github.com/uibcdf/Taller-Python/graphs/contributors">o de la
+contribución de los desarrolladores</a>, <a class="reference external" href="https://github.com/uibcdf/Taller-Python/wiki">una sección wiki</a>,
+<a class="reference external" href="https://pages.github.com/">un servidor gratuito de webs para documentación</a>, etc.</p>
+</section>
+<section id="como-se-usa">
+<h2>¿Cómo se usa?<a class="headerlink" href="#como-se-usa" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Debido a que su comunidad de usuarios es muy grande, existe buena documentación
+propia y ajena para entender su uso, por lo que te sugerimos que dediques en
+este punto unos minutos a revisar la siguiente página:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/es">Documentación de GitHub</a></p></li>
+</ul>
+<p>Para usar GitHub, debes seguir algunos sencillos pasos:</p>
+<section id="como-crear-una-cuenta-en-github">
+<h3>¿Cómo crear una cuenta en GitHub?<a class="headerlink" href="#como-crear-una-cuenta-en-github" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para crear un usuario en GitHub, sigue los siguientes pasos:</p>
+<ol class="arabic simple">
+<li><p>Abre <a class="reference external" href="https://github.com">el sitio web de GitHub</a> en tu navegador web y haz
+clic en el botón verde «Sign up» que se encuentra en la esquina superior
+derecha de la página.</p></li>
+<li><p>Ingresa tu dirección de correo electrónico en el campo correspondiente y haz
+clic en el botón «Sign up for GitHub».</p></li>
+<li><p>Ingresa tu nombre de usuario. Este nombre de usuario será la identificación
+de tu perfil de GitHub y se usará para crear la URL de tu perfil.</p></li>
+<li><p>Ingresa una contraseña segura y confirma tu contraseña.</p></li>
+<li><p>Selecciona tu plan de GitHub. GitHub ofrece planes gratuitos y de pago. Si
+eres nuevo en GitHub, es posible que desees comenzar con el plan gratuito y
+luego actualizar a un plan de pago si lo necesitas.</p></li>
+<li><p>Completa el proceso de verificación de tu correo electrónico. GitHub te
+enviará un correo electrónico de confirmación para verificar tu dirección de
+correo electrónico. Sigue las instrucciones en el correo electrónico para
+completar el proceso de verificación.</p></li>
+<li><p>Una vez que hayas verificado tu dirección de correo electrónico, podrás
+iniciar sesión en tu cuenta de GitHub y comenzar a utilizar la plataforma.</p></li>
+</ol>
+</section>
+<section id="como-crear-un-nuevo-repositorio">
+<h3>¿Cómo crear un nuevo repositorio?<a class="headerlink" href="#como-crear-un-nuevo-repositorio" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Después de haber iniciado sesión en tu cuenta de GitHub,</p>
+<ol class="arabic simple">
+<li><p>Haz clic en el botón verde «New repository» en la página principal.</p></li>
+<li><p>Dale un nombre a tu repositorio y elige la configuración que desees,
+agregando una pequeña descripción.</p></li>
+<li><p>Marca la opción «Initialize this repository with a README».</p></li>
+<li><p>Haz clic en el botón «Create repository».</p></li>
+</ol>
+</section>
+<section id="como-hacer-un-fork-de-un-repositorio-en-github">
+<h3>¿Cómo hacer un fork de un repositorio en GitHub?<a class="headerlink" href="#como-hacer-un-fork-de-un-repositorio-en-github" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para hacer un fork de un repositorio en GitHub, debes seguir los siguientes
+pasos:</p>
+<ol class="arabic simple">
+<li><p>Inicia sesión en tu cuenta de GitHub y navega al repositorio del que deseas
+hacer un «Fork».</p></li>
+<li><p>Haz clic en el botón «Fork» que se encuentra en la esquina superior derecha
+de la página.</p></li>
+<li><p>Se abrirá una ventana emergente que te permitirá seleccionar la cuenta en la
+que deseas hacer el fork. Selecciona tu cuenta de GitHub y haz clic en el
+botón «Fork».</p></li>
+<li><p>GitHub copiará el repositorio original a tu cuenta de GitHub como un nuevo
+repositorio.</p></li>
+</ol>
+<p>Ahora podrás trabajar en el nuevo repositorio que acabas de crear. Puedes
+clonarlo localmente y hacer cambios, agregar nuevos archivos y hacer commits.</p>
+</section>
+<section id="como-clonar-un-repositorio-en-tu-computadora">
+<h3>¿Cómo clonar un repositorio en tu computadora?<a class="headerlink" href="#como-clonar-un-repositorio-en-tu-computadora" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Una vez creado el repositorio, puedes clonarlo en tu computadora para trabajar
+localmente (es como «descargarlo»). Para ello:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en el botón verde «Code»  y copia la GitHub CLI del repositorio.</p></li>
+<li><p>Si no lo has hecho ya, instala gh en tu computadora. En esta página
+encontraras cómo hacerlo.</p></li>
+<li><p>Abre tu terminal y escribe el comando gh repo clone seguido de la GitHub CLI
+que copiaste.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gh<span class="w"> </span>repo<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;GitHub CLI&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="como-trabajar-en-tu-proyecto">
+<h3>¿Cómo trabajar en tu proyecto?<a class="headerlink" href="#como-trabajar-en-tu-proyecto" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Una vez que hayas clonado el repositorio en tu computadora, es posible hacer
+cambios en los ficheros y carpetas que contiene. Abre el proyecto que desees
+modificar en tu editor de código (VIM o eMACS) y comienza a trabajar en él.</p>
+<ol class="arabic simple">
+<li><p>Si no lo has hecho ya, instala git en tu computadora. En esta página
+encontraras cómo hacerlo.</p></li>
+<li><p>Cuando hayas hecho cambios que desees subir al repositorio, agrega los
+archivos con:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>--all
+</pre></div>
+</div>
+<p>Crea un commit con:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Mensaje de commit&quot;</span>
+</pre></div>
+</div>
+<p>(El «Mensaje de commit» es un breve mensaje que describe los cambios que
+realizaste)</p>
+<p>Sube los cambios al repositorio remoto en GitHub con:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push
+</pre></div>
+</div>
+</section>
+<section id="como-puedes-agregar-tus-cambios-al-repositorio-original">
+<h3>¿Cómo puedes agregar tus cambios al repositorio original?<a class="headerlink" href="#como-puedes-agregar-tus-cambios-al-repositorio-original" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si deseas contribuir con tus cambios al repositorio original, puedes enviar una
+solicitud de pull request. Sigue estos sencillos pasos:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en el botón «Pull requests» en la página del repositorio.</p></li>
+<li><p>Haz clic en el botón verde «New pull request».</p></li>
+<li><p>Selecciona el branch que deseas enviar y el repositorio al que deseas enviar
+la solicitud de pull request.</p></li>
+<li><p>Completa el formulario de solicitud de pull request y haz clic en el botón
+«Create pull request».</p></li>
+</ol>
+<p>La solicitud de pull request será enviada al propietario original del
+repositorio para su revisión y aprobación.</p>
+</section>
+<section id="el-comando-gh-nativo-de-github">
+<h3>El comando gh nativo de GitHub<a class="headerlink" href="#el-comando-gh-nativo-de-github" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Recientemente, GitHub ha habilitado una nueva aplicación, el comando gh.</p>
+<p>gh es una herramienta de línea de comandos oficial de GitHub que permite a los
+usuarios interactuar con la plataforma GitHub desde la terminal. Algunos de los
+comandos más comunes que se pueden usar con gh son:</p>
+<ul class="simple">
+<li><p>gh repo clone: clona un repositorio desde GitHub a tu computadora.</p></li>
+<li><p>gh repo fork: crea un fork de un repositorio en tu cuenta de GitHub.</p></li>
+<li><p>gh issue list: muestra una lista de las issues en un repositorio.</p></li>
+<li><p>gh pr create: crea una solicitud de pull request en un repositorio.</p></li>
+<li><p>gh pr checkout: descarga y revisa una solicitud de pull request.</p></li>
+<li><p>gh release create: crea un lanzamiento en un repositorio.</p></li>
+</ul>
+<p>Estos son solo algunos ejemplos de los muchos comandos que gh ofrece. La
+herramienta es muy útil para los desarrolladores que trabajan con GitHub y
+prefieren trabajar en la línea de comandos en lugar de la interfaz de usuario
+web.</p>
+</section>
+<section id="como-instalar-el-comando-gh-en-tu-computadora">
+<h3>¿Cómo instalar el comando gh en tu computadora?<a class="headerlink" href="#como-instalar-el-comando-gh-en-tu-computadora" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para instalar el comando gh en tu computadora, sigue estos pasos:</p>
+<ol class="arabic simple">
+<li><p>Visita <a class="reference external" href="https://cli.github.com/manual/installation">la página de descargas de GitHub CLI</a></p></li>
+<li><p>Descarga el instalador apropiado para tu sistema operativo.</p></li>
+<li><p>Ejecuta el archivo de instalación descargado y sigue las instrucciones en
+pantalla para completar la instalación.</p></li>
+<li><p>Abre una nueva terminal y escribe el comando gh. Si la instalación fue
+exitosa, deberías ver información sobre cómo usar gh y una lista de comandos
+disponibles.</p></li>
+</ol>
+<p>Si recibes un error de «comando no encontrado», puede que necesites agregar la
+ruta de instalación de gh a tu variable PATH. No te preocupes, sólo sigue
+estos pasos:</p>
+<ol class="arabic simple">
+<li><p>Abre tu terminal.</p></li>
+<li><p>Escribe el comando echo $PATH para mostrar la lista actual de rutas de tu
+variable PATH.</p></li>
+<li><p>Si la ruta de instalación de gh no aparece en la lista, entonces necesitas
+agregarla. Para hacerlo, escribe el siguiente comando en tu terminal,
+reemplazando /ruta/de/gh con la ubicación real de la instalación de gh en tu
+sistema:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/ruta/de/gh:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Presiona Enter. Este comando agrega la ruta de gh al inicio de tu variable
+PATH.</p></li>
+<li><p>Verifica que se ha agregado la ruta correctamente, para ello vuelve a
+ejecutar el comando echo $PATH. Ahora deberías ver la ruta de gh al inicio de
+la lista.</p></li>
+</ol>
+<p>Si deseas que esta ruta se agregue automáticamente cada vez que abres una nueva
+terminal, agrega el comando anterior al archivo de inicio de tu shell (por
+ejemplo, ~/.bashrc para Bash o ~/.zshrc para Zsh).</p>
+<ol class="arabic simple" start="6">
+<li><p>Abre el archivo con tu editor de texto favorito, agrega la línea al final
+del archivo y guárdalo.</p></li>
+<li><p>Ya tienes la ruta de instalación de gh agregada a tu variable PATH, así que
+ya puedes usar el comando gh desde cualquier lugar en tu sistema.</p></li>
+</ol>
+</section>
+</section>
+<section id="dudas-problemas-tecnicos-y-soluciones">
+<h2>Dudas, problemas técnicos y soluciones<a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para compartir con nosotros y con el resto de participantes las dudas,
+problemas, sugerencias o soluciones, que pudieras tener sobre el uso de GitHub y
+esta sección, te proponemos usar la siguiente discusión en este repositorio:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/uibcdf/Taller-Python/discussions/4">Foro técnico sobre GitHub</a></p></li>
+</ul>
+</section>
+<section id="mas-recursos-utiles">
+<h2>Más recursos útiles<a class="headerlink" href="#mas-recursos-utiles" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Esta web era sólo una guia introductoria. No es funcional documentarse o
+estudiar mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
+manera más solida si con el uso te van surgiendo necesidades a las que vas
+dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más
+información útil en los siguientes listados.</p>
+<section id="documentacion">
+<h3>Documentación<a class="headerlink" href="#documentacion" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Documentación oficial de la herramienta:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/es">Documentación GitHub</a></p></li>
+</ul>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos">
+<h3>Tutoriales, Webinars y cursos gratuitos<a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Otros tutoriales, webinars, videos de youtube y cursos gratuitos que puedes consultar:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">Conociendo GitHub</a></p></li>
+<li><p><a class="reference external" href="https://reviblog.net/2018/03/29/tutorial-de-git-aprende-git-y-github-gitlab-de-manera-facil-rapida-y-sencilla-parte-1/">Aprende Git y GitHub (parte 1 de 6)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/&#64;GitHub">El canal de GitHub en YouTube</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Hispano/Guia-sobre-Git-Github-y-Metodologia-de-Desarrollo-de-Software-usando-Git-y-Github">Hispano - Guia GitHub</a></p></li>
+<li><p><a class="reference external" href="https://www.coursera.org/learn/git-espanol">Coursera: GitHub</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../git/git.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Git</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../jupyter/jupyter.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Jupyter</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-github">¿Qué es GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-crear-una-cuenta-en-github">¿Cómo crear una cuenta en GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-crear-un-nuevo-repositorio">¿Cómo crear un nuevo repositorio?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-hacer-un-fork-de-un-repositorio-en-github">¿Cómo hacer un fork de un repositorio en GitHub?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-clonar-un-repositorio-en-tu-computadora">¿Cómo clonar un repositorio en tu computadora?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-trabajar-en-tu-proyecto">¿Cómo trabajar en tu proyecto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-puedes-agregar-tus-cambios-al-repositorio-original">¿Cómo puedes agregar tus cambios al repositorio original?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-comando-gh-nativo-de-github">El comando gh nativo de GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-instalar-el-comando-gh-en-tu-computadora">¿Cómo instalar el comando gh en tu computadora?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones">Dudas, problemas técnicos y soluciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles">Más recursos útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos">Tutoriales, Webinars y cursos gratuitos</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

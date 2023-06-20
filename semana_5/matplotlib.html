@@ -1,0 +1,1242 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Matplotlib &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'semana_5/matplotlib';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Reto semanal" href="reto.html" />
+    <link rel="prev" title="NumPy" href="numpy.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_4/index.html">Semana 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_4/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Semana 5</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="contenido.html">Contenido</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="numpy.html">NumPy</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material_suplementario/python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../material_suplementario/otras_herramientas/index.html">Otras herramientas</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material_suplementario/otras_herramientas/google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/semana_5/matplotlib.ipynb?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/semana_5/matplotlib.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Matplotlib</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-matplotlib">¿Qué es Matplotlib?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala">¿Cómo se instala?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antes-de-empezar">Antes de empezar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importando-matplotlib">Importando Matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-representacion-grafica-sencilla">Primera representación gráfica sencilla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-tipos-de-representaciones-graficas-de-datos">Otros tipos de representaciones gráficas de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#figura-de-dispersion">Figura de dispersión</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histograma">Histograma</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-representaciones-2d">Otras representaciones 2D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exportando-la-figura-a-un-fichero">Exportando la figura a un fichero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otra-perspectiva-mas-completa-del-trabajo-con-figuras-en-matplotlib">Otra perspectiva más completa del trabajo con figuras en Matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-magicos-para-matplotlib-en-jupyter-o-ipython">Comandos mágicos para Matplotlib en Jupyter o iPython</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-notebook">Estás ejecutando esto desde Jupyter Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-lab-y-quieres-probar-jupyter-notebook">Estás ejecutando esto desde Jupyter Lab y quieres probar Jupyter Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-lab-y-no-quieres-ir-a-jupyter-notebook">Estás ejecutando esto desde Jupyter Lab y no quieres ir a Jupyter Notebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-poquito-mas-de-xkcd-a-class-anchor-id-xkcd-a">Un poquito más de XKCD <a class="anchor" id="xkcd"></a></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <br>
+<center>
+<img src="https://matplotlib.org/_images/logo2.png" width="50%">
+</center>
+<br>
+<section class="tex2jax_ignore mathjax_ignore" id="matplotlib">
+<h1>Matplotlib<a class="headerlink" href="#matplotlib" title="Enlace permanente a este encabezado">#</a></h1>
+<section id="que-es-matplotlib">
+<h2>¿Qué es Matplotlib?<a class="headerlink" href="#que-es-matplotlib" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Puede que Matplotlib sea la primera librería de Python, por años de vida y comunidad de usuarios, desarrollada para la representación gráfica de datos. Su flexibilidad y la posibilidad de editar cada elemento de una gráfica hace que el uso de Matplotlib requiera de un poco de aprendizaje. Es cierto que, como veremos en otros notebooks, despues de Matplotlib han aparecido varias librerías de representación gráfica de datos en 2D y/o 3D que pueden dar resultados muy vistosos con muy pocas lineas de código. Pero entender como se usa Matplotlib es un buen primer para iniciarse en el trabajo de edición de gráficas científicas.</p>
+<br>
+<center>
+<img src="https://i.stack.imgur.com/pUlbN.png" width="350">
+</center>
+<br>
+</section>
+<section id="como-se-instala">
+<h2>¿Cómo se instala?<a class="headerlink" href="#como-se-instala" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para ver instrucciones generales de instalación puedes visitar la página oficial. Allí puedes encontrar indicaciones específicas para tu sistema operativo y/o tu gestor de entornos y paquetes. Aquí supondremos que estás trabajando en tu entorno de conda, así que el comando que debes teclear en la terminal es:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>matplotlib<span class="w"> </span>
+</pre></div>
+</div>
+</section>
+<section id="como-se-usa">
+<h2>¿Cómo se usa?<a class="headerlink" href="#como-se-usa" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="antes-de-empezar">
+<h3>Antes de empezar<a class="headerlink" href="#antes-de-empezar" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si estás ejecutando este Jupyter Notebook en tu computadora haciendo uso de tu Jupyter Lab, te recomendamos que lo reinicialices completamente borrando la salida de las celdas. Para ello acude al menú <em>Kernel</em> (top menú de la ventana) y elige la opción <em>Restart Kernel and Clear All Outputs…</em>. Puede que hayamos dejado en la copia maestra de GitHub el resultado de la ejecución de las celdas, pero es sólo para que cualquiera pueda leer el notebook allí sin necesidad de ejecutarlo. Pero tu no lo vas a leer. Vas a jugar con él. Así que resetéalo.</p>
+<p>Recuerda también que para ejecutar una celda debes presionar la combinación de teclas “mayús”+”entrar” cuanto esta está seleccionada.</p>
+</section>
+<section id="importando-matplotlib">
+<h3>Importando Matplotlib<a class="headerlink" href="#importando-matplotlib" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Matplotlib contiene en su estructura de módulos, un objeto que jerárquicamente domina sobre los demás, Pyplot. No suele ser muy habitual, vimos por ejemplo que Numpy podía invocarse directamente para su uso, pero esta librería para ser operada requiere que carguemos Pyplot como conjunto de métodos y clases como interface entre el usuario y iPython o Jupyter. El convenio sugerido por los desarrolladores es llamar a Pyplot como <code class="docutils literal notranslate"><span class="pre">plt</span></code>, y por comodidad así haremos.</p>
+<p>Verás también que cargar Numpy de inicio se va a convertir en un hábito. Es una librería a la que recurriremos casi en todos nuestros notebooks o scripts de análisis:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Comprenderás el por qué de esta celda al final de notebook</span>
+<span class="c1">#%matplotlib inline</span>
+<span class="c1">#%matplotlib notebook</span>
+<span class="c1">#%matplotlib widget</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ya podemos comenzar a ver cómo podemos en el mismo Jupyter Notebook representar gráficamente el resultado de nuestros análisis. Esto le da al notebook una nueva dimensión. Ya podemos reportar sobre el mismo formato la evolución de nuetros proyectos con comentarios, código y el gráficas.</p>
+<p>Anteriormente al uso de iPython o Jupyter, y ahora como modo de uso alternativo, la secuencia de ordenes de Matplotlib se implementaba en el script de análisis exportando el resultado gráfico a cualquier fichero eps, png, etc. Veremos estos también al final del notebook.</p>
+</section>
+<section id="primera-representacion-grafica-sencilla">
+<h3>Primera representación gráfica sencilla<a class="headerlink" href="#primera-representacion-grafica-sencilla" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Supongamos que queremos representar la linea definida por unos puntos con coordenadas X e Y:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">puntos_x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">puntos_y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/a8aece2154fb9906d3342ce1c32abce20bf0e3330b31690b582b1ac6407fbf2c.png" src="../_images/a8aece2154fb9906d3342ce1c32abce20bf0e3330b31690b582b1ac6407fbf2c.png" />
+</div>
+</div>
+<p>Vamos ahora a ponerle un título y etiquetas a los ejes X e Y</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figura 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eje X (unidades x)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eje Y (unidades y)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/f89b7a568fb9d2e498fa01c920ecf9eb8d5640e274db3b8c7bc76db050ab8bde.png" src="../_images/f89b7a568fb9d2e498fa01c920ecf9eb8d5640e274db3b8c7bc76db050ab8bde.png" />
+</div>
+</div>
+<p>Puedes cambiar el color de la linea de manera sencilla. Existe definida <a class="reference external" href="https://matplotlib.org/gallery/color/named_colors.html">por defecto una gran paleta de color</a>. Pero puedes comenzar con algo sencillo: rojo (“r”), verde (“g”), azul (“b”), cian (“c”), magenta (“m”), amarillo (“y”) y negro (“k”). O puedes hacer uso de <a class="reference external" href="https://matplotlib.org/api/colors_api.html">los código de color RGB o HEX</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>  <span class="c1"># Puedes probar con color=&quot;#800080&quot; o color=[1.0,0.5,0.0]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figura 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eje X (unidades x)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eje Y (unidades y)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/e2f8b07d12e46839464a06e8eb9fee18e2b6ec912ed3032024a7622b350a94b8.png" src="../_images/e2f8b07d12e46839464a06e8eb9fee18e2b6ec912ed3032024a7622b350a94b8.png" />
+</div>
+</div>
+<p>Ahora cambiemos los <a class="reference external" href="https://matplotlib.org/api/markers_api.html">símbolos de representación</a> o <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html">el tipo de  linea</a> y su tamaño o anchura:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span> <span class="mf">10.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figura 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eje X (unidades x)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eje Y (unidades y)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/fde46aada05da4f44ba06ea7d54ba6f04957ff0bb393f866de31c7ae464e1628.png" src="../_images/fde46aada05da4f44ba06ea7d54ba6f04957ff0bb393f866de31c7ae464e1628.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">,</span><span class="s1">&#39;+-&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;indigo&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span> <span class="mf">20.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figura 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eje X (unidades x)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eje Y (unidades y)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2284e96b05ab9543ae9ca65accfe27e61191f81d14381603ae5799542fc5cbdd.png" src="../_images/2284e96b05ab9543ae9ca65accfe27e61191f81d14381603ae5799542fc5cbdd.png" />
+</div>
+</div>
+<p>Todas estas opciones y posibilidades no tienes por qué recordarlas. Como verás al final del notebook, Matplotlib tiene una buena documentación a la que acudirás en repetidas ocasiones para consultar la sintaxis de sus funciones o para descubrir nuevas posibilidades. Pero esto suele suceder siempre a medida que vamos trabajando y conforme a las necesidades que van surgiendo. Vamos a poner un ejemplo en el siguiente párrafo.</p>
+<p>Supongamos que queremos aumentar el tamaño de letra del título y además el eje X en escala logarítmica. Podemos proceder de dos maneras:</p>
+<ul class="simple">
+<li><p>Acudir a la documentación y bucear allí -muy instructivo pero lento-.</p></li>
+<li><p>Buscar en internet -rápido y eficaz aunque en ocasiones no tan instructivo-</p></li>
+</ul>
+<p>Vamos a tomar ahora la segunda opción para descubrir cómo cambiar el tamaño de letra: <a class="reference external" href="https://www.google.com.mx/search?q=change+font+size+title+matplotlib">búsqueda de «matplotlib font size title»</a> y <a class="reference external" href="https://www.google.com.mx/search?q=log+scale+matplotlib">búsqueda de «matplotlib log scale»</a>. Puede que hayas visto que se puede resolver así:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">puntos_x</span><span class="p">,</span> <span class="n">puntos_y</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">3.0</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Datos A&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Figura 1&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eje X (unidades x)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eje Y (unidades y)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/0314ca62b39c1c260876aa8ebe3934d6eb7cdb79d979cbbc137abc96fb30c7ab.png" src="../_images/0314ca62b39c1c260876aa8ebe3934d6eb7cdb79d979cbbc137abc96fb30c7ab.png" />
+</div>
+</div>
+</section>
+<section id="otros-tipos-de-representaciones-graficas-de-datos">
+<h3>Otros tipos de representaciones gráficas de datos<a class="headerlink" href="#otros-tipos-de-representaciones-graficas-de-datos" title="Enlace permanente a este encabezado">#</a></h3>
+<p><a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html?highlight=pyplot%20plot#matplotlib.pyplot.plot">El método <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code></a> sirve como hemos visto para representar una gráfica en términos generales. Puedes encontrar otros ejemplos de <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html?highlight=pyplot%20plot#examples-using-matplotlib-pyplot-plot">aquí</a>. Pero para propósitos más específicos podemos encontrar otras <a class="reference external" href="https://matplotlib.org/api/pyplot_summary.html">funciones más útiles</a>. Veamos algunos ejemplos:</p>
+<section id="figura-de-dispersion">
+<h4>Figura de dispersión<a class="headerlink" href="#figura-de-dispersion" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Para representar una distribución de puntos inconexos, Matplotlib cuenta con <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html">la función <code class="docutils literal notranslate"><span class="pre">plt.scatter</span></code></a> -ejemplos <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#examples-using-matplotlib-pyplot-scatter">aquí</a>-. Generemos una distribución bidimensional gaussiana aleatoria de 5000 puntos centrados en (4.0,10.0) con desviación estandard igual a 1 en X y 3 en Y con ayuda del <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.normal.html#numpy.random.normal">método de Numpy <code class="docutils literal notranslate"><span class="pre">np.random.normal</span></code></a>].</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dispersión_aleatoria</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">((</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">),(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">),(</span><span class="mi">5000</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="c1"># ver</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">s</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/01335636c218b7eb4139f7b81f5a2a2c764cfb0643e0d7298c4592034b5a3a48.png" src="../_images/01335636c218b7eb4139f7b81f5a2a2c764cfb0643e0d7298c4592034b5a3a48.png" />
+</div>
+</div>
+</section>
+<section id="histograma">
+<h4>Histograma<a class="headerlink" href="#histograma" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Matplotlib cuenta con funciones para representar histogramas. Histogramas en 1D con <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html">la función <code class="docutils literal notranslate"><span class="pre">plt.hist</span></code></a> (ver <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#examples-using-matplotlib-pyplot-hist">ejemplos aquí</a>) o histogramas a modo de mapa de calor en 2D con <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d">la función <code class="docutils literal notranslate"><span class="pre">plt.hist2d</span></code></a> (ver <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html#examples-using-matplotlib-pyplot-hist2d">ejemplos aquí</a>). Vamos a usar la distrubución aleatoria de la subsección anterior para ilustrar el uso de ambos métodos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histograma en X&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histograma en Y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/14ac2df25843e03c500eae6c45001a3dd71a791bde6c722ebcb91b2716088c6e.png" src="../_images/14ac2df25843e03c500eae6c45001a3dd71a791bde6c722ebcb91b2716088c6e.png" />
+<img alt="../_images/171e14eb40ec27eb09eaa2a40ab8395ac663dbef8695f7664dd72b8c7dc464e5.png" src="../_images/171e14eb40ec27eb09eaa2a40ab8395ac663dbef8695f7664dd72b8c7dc464e5.png" />
+</div>
+</div>
+<p>Además, puedes matplotlib te permite crear gráficos que te brinden información adicional para la toma de decisiones. Por ejemplo, un gráfico de distribución de probabilidad.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span> <span class="c1">## &#39;conda install scipy&#39; en la terminal si scipy no está instalado</span>
+<span class="n">h</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span> <span class="c1">## Disperción en X</span>
+<span class="n">h</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">hmean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="n">hstd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="n">pdf</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">hmean</span><span class="p">,</span> <span class="n">hstd</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span> <span class="c1">## &#39;conda install scipy&#39; en la terminal si scipy no está instalado</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">h</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span> <span class="c1">## Disperción en X</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">h</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">pdf</span><span class="p">,</span><span class="s1">&#39;k--&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;step&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span> <span class="p">(</span><span class="s1">&#39;Distribución de probabilidad&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span> <span class="p">(</span><span class="s1">&#39;Dispersión aleatoria en X&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span><span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span> <span class="p">(</span><span class="s1">&#39;Probabilidad&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span><span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span> <span class="p">(</span><span class="s1">&#39;both&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1">## Añade una linea en el promedio de los datos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">hmean</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ba3ece4cf6e7456ac3efdbef452feb5d980b42b9b630f4fcbbbb56296f64a367.png" src="../_images/ba3ece4cf6e7456ac3efdbef452feb5d980b42b9b630f4fcbbbb56296f64a367.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist2d</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Histograma 2D&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/708c1523d66eae83faaa906ba5241a3f1b706dfc97e47d434ca5310865b7c61c.png" src="../_images/708c1523d66eae83faaa906ba5241a3f1b706dfc97e47d434ca5310865b7c61c.png" />
+</div>
+</div>
+<p>Vamos a aprovechar aquí para ver cómo podemos hacer una figura múltiple (multiplot con <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplot.html">la función <code class="docutils literal notranslate"><span class="pre">plt.subplot</span></code></a>, <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplot.html">ejemplos aquí</a>):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histograma en X&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist2d</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Histograma 2D&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/99b9e9810141619edbfdbac7ea2e81d5037c99390ecadbf9a59995eb514f91a0.png" src="../_images/99b9e9810141619edbfdbac7ea2e81d5037c99390ecadbf9a59995eb514f91a0.png" />
+</div>
+</div>
+</section>
+<section id="otras-representaciones-2d">
+<h4>Otras representaciones 2D<a class="headerlink" href="#otras-representaciones-2d" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Hemos visto cómo con una secuencia de datos Matplotlib puede representar el histograma 2D fácilmente. Veamos ahora qué hacer si ya tenemos la información en forma de magnitudes escalares asignadas a una grid o matrix (con <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.matshow.html?highlight=matshow#matplotlib.pyplot.matshow">la función <code class="docutils literal notranslate"><span class="pre">plt.matshow</span></code></a>, ejemplos <a class="reference external" href="https://matplotlib.org/gallery/images_contours_and_fields/matshow.html?highlight=matrix">aquí</a>):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">valores_3X3</span><span class="o">=</span><span class="p">[[</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">30</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># Probemos con una matrix 3x3</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">valores_3X3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[10, 0, 20], [0, 5, 30], [5, 10, 0]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">valores_3X3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8f3565cb44c0765253793431d083f799beb3c66c4a94c86e5a8f034baab772ae.png" src="../_images/8f3565cb44c0765253793431d083f799beb3c66c4a94c86e5a8f034baab772ae.png" />
+</div>
+</div>
+<p>La generalización de este tipo de gráfico viene dada por <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html?highlight=heatmap">el método <code class="docutils literal notranslate"><span class="pre">plt.imshow</span></code></a>, que nos puede servir para hacer mapas de calor en <a class="reference external" href="https://matplotlib.org/gallery/images_contours_and_fields/interpolation_methods.html?highlight=matshow">2D interpolados</a> (ejemplos <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html?highlight=heatmap#examples-using-matplotlib-pyplot-imshow">aquí</a>). Probemos para esto a hacer nuestro propio mapa de densidad 2D del histograma que calculamos acontinuación para la secuencia aleatoria usada al comienzo de este notebook.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">frecuencia</span><span class="p">,</span> <span class="n">x_edges</span><span class="p">,</span> <span class="n">y_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram2d</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/6e4da6635b090d4a8fc74f60017a90a90ea7bbf32bb3ac20ef88ef6d9b381007.png" src="../_images/6e4da6635b090d4a8fc74f60017a90a90ea7bbf32bb3ac20ef88ef6d9b381007.png" />
+</div>
+</div>
+<p>Vamos a hora a cambiar la escala de color. Elegiremos un degradado de blanco a negro como podemos ver en <a class="reference external" href="https://matplotlib.org/examples/color/colormaps_reference.html">esta lista de opciones</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
+           <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/378343b206b3b6244fbc69ad8a3e32c37827f782adbee39c2418e728705087ac.png" src="../_images/378343b206b3b6244fbc69ad8a3e32c37827f782adbee39c2418e728705087ac.png" />
+</div>
+</div>
+<p>Interpolemos ahora para que el mapa de densidad quede más suave.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/3de5ada966aa76d573539f7b33cb2193fef1968b99b6554a78ffe4091a8f633b.png" src="../_images/3de5ada966aa76d573539f7b33cb2193fef1968b99b6554a78ffe4091a8f633b.png" />
+</div>
+</div>
+<p>Y añadamos ahora isolineas:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span><span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/7195be58fbbc905875e18962fac1436909cd5374f973844ed6d657bfbd546067.png" src="../_images/7195be58fbbc905875e18962fac1436909cd5374f973844ed6d657bfbd546067.png" />
+</div>
+</div>
+<p>Para que se vea mejor, y aunque no respetemos la igualdad de escalas entre X e Y, hagamos el plot con una relación 1:4 entre los ejes:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d7291d7b6c6a282d8a120f48054512b9be33908d727f1f0ccbe3052238bbe52c.png" src="../_images/d7291d7b6c6a282d8a120f48054512b9be33908d727f1f0ccbe3052238bbe52c.png" />
+</div>
+</div>
+<p>Por último probemos a poner etiquetas sobre las isolineas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">contour_lines</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span>
+                            <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">contour_lines</span><span class="p">,</span> <span class="n">contour_lines</span><span class="o">.</span><span class="n">levels</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%2.1f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/1de2eb21bd5ba69f175958d1c9018098bb5a88f7f37f78377afff7e213388f94.png" src="../_images/1de2eb21bd5ba69f175958d1c9018098bb5a88f7f37f78377afff7e213388f94.png" />
+</div>
+</div>
+<p>Ya por último vamos a añadir las etiquetas a los ejes y a la figura:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">contour_lines</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span>
+                            <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">contour_lines</span><span class="p">,</span> <span class="n">contour_lines</span><span class="o">.</span><span class="n">levels</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%2.1f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Mapa de densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Coordenada X&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Coordenada Y&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8652cb62b6617ee7154c2be37de11e4290f5ffa4d47697406dc06808d0cb817e.png" src="../_images/8652cb62b6617ee7154c2be37de11e4290f5ffa4d47697406dc06808d0cb817e.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="exportando-la-figura-a-un-fichero">
+<h3>Exportando la figura a un fichero<a class="headerlink" href="#exportando-la-figura-a-un-fichero" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Matplotlib permite guardar la figura en una multitud de formatos gracias a <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html">la función <code class="docutils literal notranslate"><span class="pre">plt.savefig</span></code></a> (ejemplos <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html">aquí</a>). Aquí, para ilustrar su uso vamos a guardar la imagen en eps.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">contour_lines</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span>
+                            <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">contour_lines</span><span class="p">,</span> <span class="n">contour_lines</span><span class="o">.</span><span class="n">levels</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%2.1f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Mapa de densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Coordenada X&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Coordenada Y&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figura.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8652cb62b6617ee7154c2be37de11e4290f5ffa4d47697406dc06808d0cb817e.png" src="../_images/8652cb62b6617ee7154c2be37de11e4290f5ffa4d47697406dc06808d0cb817e.png" />
+</div>
+</div>
+<p>Si estás ejecutando este notebook en JupyterLab, verás que en el navegador de ficheros ha aparecido en la carpeta en la que te encuentras el fichero “figura.png”. Vamos a visualizarlo desde esta misma celda gracias a la sintaxis de Markdown <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;figura.png&quot;&gt;</span></code>. Ejecuta de nuevo esta celda de texto con la combinación de teclas “mayús”+”entrar”.</p>
+<div>
+<center><img src="figura.png" width="50%"></center>
+</div><p>Antes de seguir con la próxima sección, borremos el fichero que acabamos de crear.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;figura.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="otra-perspectiva-mas-completa-del-trabajo-con-figuras-en-matplotlib">
+<h3>Otra perspectiva más completa del trabajo con figuras en Matplotlib<a class="headerlink" href="#otra-perspectiva-mas-completa-del-trabajo-con-figuras-en-matplotlib" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Invocar directamente al comando de <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> es una manera muy rápida de visualizar nuestros datos. Pero si lo que queremos es construir a conciencia una buena figura que luego va a ser exportada por ejemplo para una publicación, es mejor trabajar de manera más fina y crear, antes que nada, <a class="reference external" href="https://matplotlib.org/api/figure_api.html">el objeto <code class="docutils literal notranslate"><span class="pre">figure</span></code></a> para trabajar sobre el. Esto ensancha aún más la versatilidad del uso que haces de Matplotlib y nos da más control.</p>
+<p>Aunque pueda parecer más complicado, y requiera un poquito más de paciencia las primeras veces, es mejor preparar así una figura. Veamos un ejemplo no tan sencillo y comprenderás el cambio de enfoque. Vamos a crear una figura triple añadiendo al mapa de densidad anterior los histogramas unidimensionales.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mi_figura</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="n">grid</span> <span class="o">=</span> <span class="n">mi_figura</span><span class="o">.</span><span class="n">add_gridspec</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">mi_figura</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">mi_figura</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">mi_figura</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="p">[</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">,</span> <span class="n">ax3</span><span class="p">]:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">)</span>
+
+
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">320</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">300</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
+
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dispersión_aleatoria</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span><span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">320</span><span class="p">])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">300</span><span class="p">])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
+
+<span class="n">ax3</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="c1"># extent=extent,</span>
+           <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">)</span>
+
+<span class="n">contour_lines</span> <span class="o">=</span> <span class="n">ax3</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">frecuencia</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">contour_lines</span><span class="p">,</span> <span class="n">contour_lines</span><span class="o">.</span><span class="n">levels</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%2.1f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Coordenada X&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Coordenada Y&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/4b131459141c3ae74789dea0d3290864108c5dbd1e5bc23bf91971f3692a404d.png" src="../_images/4b131459141c3ae74789dea0d3290864108c5dbd1e5bc23bf91971f3692a404d.png" />
+</div>
+</div>
+<p>Podríamos profundizar mucho más en la modificación de todos los parámetros de la gráfica. De hecho necesitaría varios ajustes, pero el propósito de este notebook es introductorio. Encontraremos más ejemplos y más opciones en sucesivas unidades de manera aplicada.</p>
+</section>
+<section id="comandos-magicos-para-matplotlib-en-jupyter-o-ipython">
+<h3>Comandos mágicos para Matplotlib en Jupyter o iPython<a class="headerlink" href="#comandos-magicos-para-matplotlib-en-jupyter-o-ipython" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El modo en que la visualización de Matplotlib es integrado en Jupyter o iPython puede ser modificado según se invoquen o no unos comandos mágicos al comienzo del notebook. Un <a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/">comando mágico de Jupyter</a> es una orden dada en una celda de código que modifica el comportamiento del notebook. Estas órdenes van precedidas del caracter “%”. Puedes listar con <code class="docutils literal notranslate"><span class="pre">%lsmagic</span></code> <a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">los distintos comandos mágicos</a> que puedes usar:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">lsmagic</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora comprenderás la presencia de la primera celda de este notebook con tres lineas de código comentadas. <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code> ofrece un representación en el notebook con funciones interactivas, como hacer zoom, mientras que <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> devuelve la visualización en linea pasiva por defecto. Así sucedía antes de Jupyter Lab con Jupyter Notebook. Te propongo que lo compruebes, desde Jupyter Notebook, reseteando el kernel de este notebook y ejecutando primeramente esa celda con una de las líneas «descomentada» antes de generar cualquier representación. Ahora seguramente pensaras… desde Jupyter Notebook? Bueno, puedes estar en una de las siguientes situaciones.</p>
+<section id="estas-ejecutando-esto-desde-jupyter-notebook">
+<h4>Estás ejecutando esto desde Jupyter Notebook<a class="headerlink" href="#estas-ejecutando-esto-desde-jupyter-notebook" title="Enlace permanente a este encabezado">#</a></h4>
+<p>¿Estás lanzando el servidor de Jupyter con la versión “Notebook” (anterior a Lab)? ¿Hiciste el siguiente comando en tu terminal para navegar por estos notebooks?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+<p>En ese caso puedes alternar <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code> y <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> para ver el cambio de comportamiento del notebook. Resetea el kernel y el output del notebook en cada caso para que el comando mágico tenga efecto.</p>
+</section>
+<section id="estas-ejecutando-esto-desde-jupyter-lab-y-quieres-probar-jupyter-notebook">
+<h4>Estás ejecutando esto desde Jupyter Lab y quieres probar Jupyter Notebook<a class="headerlink" href="#estas-ejecutando-esto-desde-jupyter-lab-y-quieres-probar-jupyter-notebook" title="Enlace permanente a este encabezado">#</a></h4>
+<p>¿Estás lanzando el servidor de Jupyter con la versión “Lab”? ¿Hiciste el siguiente comando en tu terminal para navegar por estos notebooks?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
+</pre></div>
+</div>
+<p>Puedes cambiar entre Jupyter Lab y Jupyter Notebook sin más que hacer una pequeña modificación a la url que ves en el navegador. Ahora mismo debe ser algo parecido a <code class="docutils literal notranslate"><span class="pre">localhost:8889/lab</span></code>. Cámbiala a <code class="docutils literal notranslate"><span class="pre">localhost:8889/notebooks/Python/Matplotlib.ipynb</span></code> y presiona la tecla <code class="docutils literal notranslate"><span class="pre">entra</span></code> para que vuelva a cargar la página web. Ahora estás viendo el notebook con la versión Jupyter Notebook. Deja que te de otro tip antes de que alternes entre los comandos mágicos <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code> y <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> para ver el cambio de comportamiento del notebook (siempre reseteando el kernel y el output para que los comandos mágicos tengan efecto). La dirección en el navegador <code class="docutils literal notranslate"><span class="pre">localhost:8889/tree</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">localhost:8889/lab</span></code> te lleva al explorador de ficheros de Jupyter Notebook. Si lo pruebas, recuerda que este notebook está en la carpeta <code class="docutils literal notranslate"><span class="pre">Python</span></code>.</p>
+</section>
+<section id="estas-ejecutando-esto-desde-jupyter-lab-y-no-quieres-ir-a-jupyter-notebook">
+<h4>Estás ejecutando esto desde Jupyter Lab y no quieres ir a Jupyter Notebook<a class="headerlink" href="#estas-ejecutando-esto-desde-jupyter-lab-y-no-quieres-ir-a-jupyter-notebook" title="Enlace permanente a este encabezado">#</a></h4>
+<p>¿Estás lanzando el servidor de Jupyter con la versión “Lab”? ¿Hiciste el siguiente comando en tu terminal para navegar por estos notebooks?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
+</pre></div>
+</div>
+<p>Sucede que en el momento de elaboración de este notebook, Jupyter Lab tiene menos de un año de desarrollo. El comando mágico <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code> no funciona, pero <a class="reference external" href="https://github.com/matplotlib/jupyter-matplotlib">se está desarrollando un widget para la visualización interactiva de Matplotlib</a>. Puedes probarlo de la siguiente manera. Sal de Jupyter Lab y ejecuta estas cuatro lineas en tu terminal (si estás trabajando en un entorno de conda, asegurate que se ejecutan en el mismo entorno):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>ipympl
+conda<span class="w"> </span>install<span class="w"> </span>nodejs
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>@jupyter-widgets/jupyterlab-manager
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>jupyter-matplotlib
+</pre></div>
+</div>
+<p>Ahora puedes lanzar otra vez Jupyter Lab y regresar a este notebook. Prueba el comando mágico <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">widget</span></code> con el kernel del notebook reinicializado y la salida borrada. El comando mágico <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code>, o no poner nada, da una visualización no interactiva.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">
+<h2>Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a><a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para centralizar esas dudas técnicas sobre el tema de este notebook o proponer soluciones o sugerencias más técnicas que queremos encontrar en el futuro comentadas y visibles para todos, haz uso del siguiente canal:</p>
+<p><a class="reference external" href="https://github.com/uibcdf/Academia/issues/19">Foro Técnico: Matplotlib</a></p>
+</section>
+<section id="mas-recursos-utiles-a-class-anchor-id-recursos-a">
+<h2>Más recursos útiles <a class="anchor" id="recursos"></a><a class="headerlink" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El propósito de este notebook es ser un documento únicamente introductorio. Puedes encontrar -o contribuir añadiendo- más información útil en el siguiente listado:</p>
+<section id="documentacion-a-class-anchor-id-documentacion-a">
+<h3>Documentación <a class="anchor" id="documentacion"></a><a class="headerlink" href="#documentacion-a-class-anchor-id-documentacion-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://matplotlib.org/<br />
+https://matplotlib.org/contents.html</p>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">
+<h3>Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a><a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://realpython.com/python-matplotlib-guide/<br />
+https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html<br />
+https://github.com/damianavila/Python-Cientifico-HCC/blob/master/4_Matplotlib.ipynb<br />
+https://scipy-cookbook.readthedocs.io/items/idx_matplotlib.html</p>
+</section>
+<section id="un-poquito-mas-de-xkcd-a-class-anchor-id-xkcd-a">
+<h3>Un poquito más de XKCD <a class="anchor" id="xkcd"></a><a class="headerlink" href="#un-poquito-mas-de-xkcd-a-class-anchor-id-xkcd-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://deparkes.co.uk/2018/04/16/matplotlib-xkcd-style-plots/<br />
+https://jakevdp.github.io/blog/2013/07/10/XKCD-plots-in-matplotlib/<br />
+https://matplotlib.org/xkcd/examples/showcase/xkcd.html<br />
+https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/<br />
+https://www.chrisstucchio.com/blog/2014/why_xkcd_style_graphs_are_important.html<br />
+https://www.gnuband.org/2017/12/29/gallery-of-xkcd-and-other-python-matplotlib-styles/</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="numpy.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">NumPy</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reto.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Reto semanal</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-matplotlib">¿Qué es Matplotlib?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala">¿Cómo se instala?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#antes-de-empezar">Antes de empezar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importando-matplotlib">Importando Matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-representacion-grafica-sencilla">Primera representación gráfica sencilla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-tipos-de-representaciones-graficas-de-datos">Otros tipos de representaciones gráficas de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#figura-de-dispersion">Figura de dispersión</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histograma">Histograma</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-representaciones-2d">Otras representaciones 2D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exportando-la-figura-a-un-fichero">Exportando la figura a un fichero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otra-perspectiva-mas-completa-del-trabajo-con-figuras-en-matplotlib">Otra perspectiva más completa del trabajo con figuras en Matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-magicos-para-matplotlib-en-jupyter-o-ipython">Comandos mágicos para Matplotlib en Jupyter o iPython</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-notebook">Estás ejecutando esto desde Jupyter Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-lab-y-quieres-probar-jupyter-notebook">Estás ejecutando esto desde Jupyter Lab y quieres probar Jupyter Notebook</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estas-ejecutando-esto-desde-jupyter-lab-y-no-quieres-ir-a-jupyter-notebook">Estás ejecutando esto desde Jupyter Lab y no quieres ir a Jupyter Notebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-poquito-mas-de-xkcd-a-class-anchor-id-xkcd-a">Un poquito más de XKCD <a class="anchor" id="xkcd"></a></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

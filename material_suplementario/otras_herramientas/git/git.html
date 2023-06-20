@@ -1,0 +1,1047 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Git &#8212; documentación de UIBCDF - Taller de Python - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'material_suplementario/otras_herramientas/git/git';</script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="GitHub" href="../github/github.html" />
+    <link rel="prev" title="Conda" href="../conda/conda.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Python"/>
+    <script>document.write(`<img src="../../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Python"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../quienes_somos.html">Quiénes somos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_1/index.html">Semana 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_1/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_2/index.html">Semana 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_2/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_3/index.html">Semana 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/contenido.html">Contenido</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/recursos_adicionales.html">Recursos adicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_3/sesion.html">Sesión en videoconferencia</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_4/index.html">Semana 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_4/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_5/index.html">Semana 5</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../semana_5/contenido.html">Contenido</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/numpy.html">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/matplotlib.html">Matplotlib</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../semana_5/reto.html">Reto semanal</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/reto_1.html">Algoritmo para ordenar enteros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../semana_5/reto_2.html">Percolation (I)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_5/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_5/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_6/index.html">Semana 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_6/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_7/index.html">Semana 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_7/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_8/index.html">Semana 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_8/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_9/index.html">Semana 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_9/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../semana_10/index.html">Semana 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/contenido.html">Contenido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/reto.html">Reto semanal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/preguntas.html">Preguntas de la semana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../semana_10/recursos_adicionales.html">Recursos adicionales</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Material Suplementario</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/python.html">Cómo instalar y trabajar con Python</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Otras herramientas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../conda/conda.html">Conda</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../markdown/markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binder/binder.html">Binder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ipython/ipython.html">IPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../google_colab/google_colab.html">Google Colaboratory</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ediciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../ediciones/2023.2.html">2023.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Python/blob/main/material_suplementario/otras_herramientas/git/git.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/material_suplementario/otras_herramientas/git/git.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Git</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-git">¿Qué es Git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala">¿Cómo se instala?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-linux">Git en Linux</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-macos">Git en macOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-windows">Git en Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-controlador-de-versiones-local-y-personal">Como controlador de versiones local y personal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-servidor-remoto-central-de-git">Como servidor remoto central de git</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#en-un-servidor-tuyo">En un servidor tuyo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-nube">En la nube</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breve-compendio-de-los-comandos-mas-utiles">Breve compendio de los comandos más útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#listado-de-ramas">Listado de ramas</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cambio-de-rama">Cambio de rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#listado-de-ramas-y-commits">Listado de ramas y commits</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-nueva-rama">Creación de nueva rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-una-rama">Eliminación de una rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-del-clon-local-de-un-una-nueva-rama-remota">Creación del clon local de un una nueva rama remota</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compendio-de-las-rutinas-mas-utiles">Compendio de las rutinas más útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creo-una-nueva-rama-y-la-empujo-tambien-al-origin-remoto">Creo una nueva rama y la empujo también al origin remoto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones">Dudas, problemas técnicos y soluciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles">Más recursos útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos">Tutoriales, Webinars y cursos gratuitos</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/Git-Logo-2Color.png"><img alt="../../../_images/Git-Logo-2Color.png" src="../../../_images/Git-Logo-2Color.png" style="width: 20%;" /></a>
+</figure>
+<br>
+<section class="tex2jax_ignore mathjax_ignore" id="git">
+<h1>Git<a class="headerlink" href="#git" title="Enlace permanente a este encabezado">#</a></h1>
+<section id="que-es-git">
+<h2>¿Qué es Git?<a class="headerlink" href="#que-es-git" title="Enlace permanente a este encabezado">#</a></h2>
+<p><a class="reference external" href="https://git-scm.com/">Git</a> es una herramienta de <a class="reference external" href="https://git-scm.com/book/es/v1/Empezando-Acerca-del-control-de-versiones">control de
+versiones</a>. Estas herramientas fueron concebidas para
+el desarrollo de software, ya que permiten un flujo de trabajo eficiente al
+mantener un historial de cambios y versiones anteriores. Más especificamente
+Git fue creada por Linus Torvalds para gestionar el desarrollo de los kernels
+(nucleos del sistema) de Linux. Existen otras herramientas similares, como SVN
+de la cual quizás hayas escuchado o usado, no obstante hoy en dia Git se ha
+convertido en un protocolo muy popular para el desarrollo de cualquier proyecto
+que involucre la participación de varias personas.</p>
+<p>¿Cómo funciona exactamente? El historial que comentamos anteriormente es el
+«corazón» de Git, pues incluye: qué cambios hizo quién o cúando, así como el
+propósito de los mismos. Tener dicho registro ofrece varias ventajas, pues
+facilita cosas como: ir hacia atrás en la historia del desarrollo del proyecto,
+implementar nuevos cambios de manera tentativa, trazabilidad de errores, crear
+copias del proyecto en las que hacer pruebas para posteriormente fusionar la
+copia con el proyecto original, etc.</p>
+<p>Por esta razón, para la comunidad científica (especialmente la que desarrolla
+trabajo computacional), Git se ha convertido en una manera cómoda y
+relativamente flexible de gestionar tareas en grupo. Justo por eso, Git ya no
+se limita únicamente al desarrollo de software. Puedes desde escribir un
+documento en colaboración hasta desarrollar unos scripts de análisis o crear
+una figura. En resumen, Git es un controlador de cambios que se encuentra
+detrás de muchas de las tareas que realizamos individualmente y en grupo los
+investigadores. Así que vale la pena presentar algunos aspectos generales sobre
+su uso.</p>
+</section>
+<section id="como-se-instala">
+<h2>¿Cómo se instala?<a class="headerlink" href="#como-se-instala" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="git-en-linux">
+<h3>Git en Linux<a class="headerlink" href="#git-en-linux" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para instalar Git en Linux, sigue los pasos que se te sugieren desde su <a class="reference external" href="https://git-scm.com/download/linux">sitio web oficial</a>.
+Por ejemplo, si tu distribución es <strong>Ubuntu</strong>, sigue estos pasos:</p>
+<ol class="arabic simple">
+<li><p>Abre la terminal de Ubuntu presionando Ctrl + Alt + T en tu teclado.</p></li>
+<li><p>Actualiza la lista de paquetes de Ubuntu con el siguiente comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Instala Git con el siguiente comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Después de ingresar el comando, se te pedirá que confirmes la instalación.
+Ingresa «Y» (o «yes») y presiona Enter para continuar.</p></li>
+<li><p>Espera a que se complete la instalación. Una vez finalizada, puedes
+verificar si Git está instalado correctamente ingresando el siguiente
+comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Ten en cuenta que Git suele estar por defecto instalado en cualquier
+distribución de Linux, así que tal vez deberías empezar por el final.</p>
+</section>
+<section id="git-en-macos">
+<h3>Git en macOS<a class="headerlink" href="#git-en-macos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para instalar Git en macOS, sigue los pasos que se te sugieren desde su <a class="reference external" href="https://git-scm.com/download/mac">sitio web oficial</a>.
+Por ejemplo, para una distribución Homebrew:</p>
+<ol class="arabic simple">
+<li><p>Abre la aplicación «Terminal» en tu Mac. Puedes encontrarla en la carpeta
+«Utilidades» dentro de «Aplicaciones».</p></li>
+<li><p>Instala Homebrew si aún no lo has hecho. Homebrew es un gestor de paquetes
+muy popular para macOS. Puedes instalar Homebrew con el siguiente comando en
+la terminal:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Una vez que se complete la instalación, actualiza la lista de paquetes de
+Homebrew con el siguiente comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>update
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Ahora puedes instalar Git con el siguiente comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Después de ingresar el comando, se te pedirá que confirmes la instalación.
+Ingresa «Y» (o yes) y presiona Enter para continuar.</p></li>
+<li><p>Espera a que se complete la instalación. Una vez finalizada, puedes
+verificar si Git está instalado correctamente ingresando el siguiente
+comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Si Git se instaló correctamente, la terminal debería mostrarte la versión de Git.</p>
+</section>
+<section id="git-en-windows">
+<h3>Git en Windows<a class="headerlink" href="#git-en-windows" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para instalar Git en Windows, sigue los siguientes pasos :</p>
+<ol class="arabic simple">
+<li><p>Visita la página oficial de descargas de Git en el <a class="reference external" href="https://git-scm.com/download/win">sitio web de
+Git</a>.</p></li>
+<li><p>Descarga el instalador de Git para Windows haciendo clic en el botón
+«Download for Windows» (Click here to download para descargar la versión
+más reciente (2.40.1) de 64 bits de Git para Windows).</p></li>
+<li><p>Ejecuta el archivo de instalación descargado. Si se te solicita permiso para
+permitir que el archivo realice cambios en tu dispositivo, haz clic en «Sí»
+para continuar.</p></li>
+<li><p>En la ventana de inicio de Git, haz clic en «Next» (Siguiente).</p></li>
+<li><p>Lee y acepta los términos de la licencia de Git. Luego, haz clic en «Next»
+(Siguiente).</p></li>
+<li><p>Elige la ubicación donde deseas instalar Git. Puedes dejar la ubicación
+predeterminada o seleccionar otra carpeta. Luego, haz clic en «Next»
+(Siguiente).</p></li>
+<li><p>Selecciona los componentes que deseas instalar. La mayoría de los usuarios
+pueden dejar los componentes predeterminados seleccionados. Luego, haz clic
+en «Next» (Siguiente).</p></li>
+<li><p>Elige el editor de texto que deseas utilizar con Git. Puedes elegir entre el
+editor predeterminado, Nano, o elegir otro editor. Luego, haz clic en «Next»
+(Siguiente).</p></li>
+<li><p>Selecciona el «PATH environment» que deseas utilizar con Git. La opción
+predeterminada es la recomendada para la mayoría de los usuarios. Luego, haz
+clic en «Next» (Siguiente).</p></li>
+<li><p>Selecciona cómo deseas que se manejen los finales de línea. La opción
+predeterminada es la recomendada para la mayoría de los usuarios. Luego,
+haz clic en «Next» (Siguiente).</p></li>
+<li><p>Selecciona si deseas crear accesos directos para Git en el escritorio y en
+el menú de inicio. Luego, haz clic en «Next» (Siguiente).</p></li>
+<li><p>Haz clic en «Install» (Instalar) para comenzar la instalación de Git.</p></li>
+<li><p>Espera a que se complete la instalación. Una vez finalizada, haz clic en
+«Finish» (Finalizar).</p></li>
+<li><p>Verifica que Git se instaló correctamente abriendo el símbolo del sistema
+(o PowerShell) y escribiendo el siguiente comando:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>La terminal debería mostrarte la versión de Git que se instaló.</p>
+</section>
+</section>
+<section id="como-se-usa">
+<h2>¿Cómo se usa?<a class="headerlink" href="#como-se-usa" title="Enlace permanente a este encabezado">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/xkcd_git.png"><img alt="../../../_images/xkcd_git.png" src="../../../_images/xkcd_git.png" style="width: 40%;" /></a>
+</figure>
+<section id="como-controlador-de-versiones-local-y-personal">
+<h3>Como controlador de versiones local y personal<a class="headerlink" href="#como-controlador-de-versiones-local-y-personal" title="Enlace permanente a este encabezado">#</a></h3>
+<p>¿Quieres generar un proyecto y llevar tu propio control de versiones?
+Encuentra aquí una lista de acciones que puedes usar.</p>
+<p>Cómo crear un proyecto/repositorio:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>init
+</pre></div>
+</div>
+<p>Cómo clonar un proyecto existente en tu máquina:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>/path/to/repository
+</pre></div>
+</div>
+<p>También puedes clonar un proyecto que se encuentra en una máquina remota.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>username@host:/path/to/repository
+</pre></div>
+</div>
+<p>Cómo añadir un nuevo fichero al listado de ficheros del proyecto que controla Git:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>&lt;filename&gt;
+</pre></div>
+</div>
+<p>Cómo añadir todos los ficheros presentes en el directorio al listado que
+controlado Git:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>*
+</pre></div>
+</div>
+<p>Recordarás que comentamos sobre los registros de Git, ahora lo veremos en
+acción. Primeramente veremos el comando status:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Notarás que Git nos menciona que estamos al día con la versión master, eso
+quiere decir que la copia local y la copia en Git son idénticas. En caso
+contrario se nos muestran los archivos de los cuales Git no lleva registro (si
+no existen) o aquellos en los que la copia local y el master no coinciden. Por
+ejemplo, crea un nuevo documento en el repositorio git y repite el comando
+anterior:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>nuevo.txt
+
+git<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Ahora, supongamos que este archivo será un cambio a implementar en el
+repositorio, lo que sigue es notificar a Git que estos cambios serán
+«permanentes». A esta acción se la denomina «comprometer» (<em>commit</em> en inglés)
+los cambios, y se realiza para registrar en el histórico el estado actual del
+proyecto. Junto a estos cambios se recomienda incluir un mensaje de texto
+explicando las modificaciones:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Commit message&quot;</span>
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/xkcd_git_commit.png"><img alt="../../../_images/xkcd_git_commit.png" src="../../../_images/xkcd_git_commit.png" style="width: 60%;" /></a>
+</figure>
+<p>Procura que tus notas sobre los commits sean claras, así aprovecharás al máximo
+el registro de Git y te ahorrarás dolores de cabeza en el futuro.</p>
+<p>Cabe mencionar que notificar los cambios no es suficiente para implementarlos.
+Si cuentas con los permisos adecuados, despues de haber hecho el
+correspondiente <code class="docutils literal notranslate"><span class="pre">commit</span></code>, es necesario «empujar» tus cambios al repositorio
+remoto, mediante el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push
+</pre></div>
+</div>
+<p>Durante el uso personal, el comando push casi no te dará algun error a menos
+que pierdas conexión con Git. Cuando se trabaja en colaboración es posible que
+haya cambios en el repositorio remoto, en ese caso Git evitará que implementes
+cambios si no posees la versión «más actual». Para resolver esta situación
+puedes «tirar» de estos para implementarlos en tu clon:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull
+</pre></div>
+</div>
+<p>Después de esto, podrás revisar los cambios implementados y decidir antes de
+duplicar o implementar de forma innecesaria. Recuerda, el comando pull sirve
+para mantener al día tu clon local, por lo que una buena práctica de trabajo es
+«tirar» del repositorio antes de intentar implementar cambios.</p>
+<p>En la introducción comentamos también que Git permite hacer pruebas al margen
+de la copia principal. Para realizar dicha operación haremos uso de los
+siguientes comandos:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>nombre_de_la_rama<span class="w"> </span><span class="c1"># para crear la rama</span>
+git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1"># para volver a la copia maestro</span>
+git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>nombre_de_la_rama<span class="w"> </span><span class="c1"># para borrar la rama</span>
+git<span class="w"> </span>merge<span class="w"> </span>nombre_de_la_rama<span class="w"> </span><span class="c1"># para fusionar los cambios de una rama en la copia maestra</span>
+</pre></div>
+</div>
+<p>Encuentra un breve listado de otros comandos útiles <a class="reference external" href="http://rogerdudler.github.io/git-guide/index.es.html">aquí</a></p>
+</section>
+<section id="como-servidor-remoto-central-de-git">
+<h3>Como servidor remoto central de git<a class="headerlink" href="#como-servidor-remoto-central-de-git" title="Enlace permanente a este encabezado">#</a></h3>
+<section id="en-un-servidor-tuyo">
+<h4>En un servidor tuyo<a class="headerlink" href="#en-un-servidor-tuyo" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Puedes configurar Git en un servidor central al que otras máquinas pueden tener
+acceso. La UIBCDF tiene su servidor de Git central configurado, pero la
+información e instrucciones para configurarlo escapan al propósito de este
+documento.</p>
+</section>
+<section id="en-la-nube">
+<h4>En la nube<a class="headerlink" href="#en-la-nube" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Si no cuentas con una máquina que poder configurar como servidor, puedes hacer
+uso de servidores remotos en la nube como por ejemplo GitHub o GitLab.
+Para hacer uso de GitHub, o interaccionar desde tu máquina con un repositorio
+de GitHub, te sugerimos acudas a la página <a class="reference internal" href="../github/github.html"><span class="doc std std-doc">«GitHub»</span></a> de este taller.</p>
+</section>
+</section>
+<section id="breve-compendio-de-los-comandos-mas-utiles">
+<h3>Breve compendio de los comandos más útiles<a class="headerlink" href="#breve-compendio-de-los-comandos-mas-utiles" title="Enlace permanente a este encabezado">#</a></h3>
+<section id="listado-de-ramas">
+<h4>Listado de ramas<a class="headerlink" href="#listado-de-ramas" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Para listar únicamente las ramas locales:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch
+</pre></div>
+</div>
+<p>Para listar únicamente las ramas remotas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-r
+</pre></div>
+</div>
+<p>Para listar todas las ramas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-a
+</pre></div>
+</div>
+</section>
+<section id="cambio-de-rama">
+<h4>Cambio de rama<a class="headerlink" href="#cambio-de-rama" title="Enlace permanente a este encabezado">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>nombre_de_rama
+</pre></div>
+</div>
+</section>
+<section id="listado-de-ramas-y-commits">
+<h4>Listado de ramas y commits<a class="headerlink" href="#listado-de-ramas-y-commits" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Para listar únicamente las ramas locales:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>show-branch
+</pre></div>
+</div>
+<p>Para listar únicamente las ramas remotas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>show-branch<span class="w"> </span>-r
+</pre></div>
+</div>
+<p>Para listar todas las ramas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>show-branch<span class="w"> </span>-all
+</pre></div>
+</div>
+</section>
+<section id="creacion-de-nueva-rama">
+<h4>Creación de nueva rama<a class="headerlink" href="#creacion-de-nueva-rama" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Para crear una nueva rama en el repositorio local</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>nombre_de_rama
+</pre></div>
+</div>
+<p>Podemos tambien crear una nueva rama y saltar a ella con un solo comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>nombre_de_rama
+</pre></div>
+</div>
+<p>En el caso de que exista un clon remoto del repositorio podemos empujar la
+creación de la nueva rama. Por ejemplo, supongamos que nuestro repositorio
+original es remoto, podemos empujar la creación de nuestra nueva rama local
+como:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>&lt;new-branch&gt;
+</pre></div>
+</div>
+</section>
+<section id="eliminacion-de-una-rama">
+<h4>Eliminación de una rama<a class="headerlink" href="#eliminacion-de-una-rama" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Para eliminar una rama:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>nombre_de_rama
+</pre></div>
+</div>
+</section>
+<section id="creacion-del-clon-local-de-un-una-nueva-rama-remota">
+<h4>Creación del clon local de un una nueva rama remota<a class="headerlink" href="#creacion-del-clon-local-de-un-una-nueva-rama-remota" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Supongamos que en el repository remoto denominado “origin” hay una rama llamada
+“foo”. Esto se puede ver de la siguiente manera:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>--all
+
+<span class="w">  </span>gh-pages
+*<span class="w"> </span>master
+<span class="w">  </span>remotes/origin/HEAD<span class="w"> </span>-&gt;<span class="w"> </span>origin/master
+<span class="w">  </span>remotes/origin/foo
+<span class="w">  </span>remotes/origin/gh-pages
+<span class="w">  </span>remotes/origin/master
+</pre></div>
+</div>
+<p>Podemos traer al clon local del repositorio la copia de la rama “foo”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>foo:foo
+</pre></div>
+</div>
+<p>Ya podemos ver que existe la rama local “foo”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>--all
+
+<span class="w">  </span>foo
+<span class="w">  </span>gh-pages
+*<span class="w"> </span>master
+<span class="w">  </span>remotes/origin/HEAD<span class="w"> </span>-&gt;<span class="w"> </span>origin/master
+<span class="w">  </span>remotes/origin/foo
+<span class="w">  </span>remotes/origin/gh-pages
+<span class="w">  </span>remotes/origin/master
+</pre></div>
+</div>
+<p>Y podemos también cambiar a la nueva rama para trabajar localmente:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>foo
+</pre></div>
+</div>
+</section>
+</section>
+<section id="compendio-de-las-rutinas-mas-utiles">
+<h3>Compendio de las rutinas más útiles<a class="headerlink" href="#compendio-de-las-rutinas-mas-utiles" title="Enlace permanente a este encabezado">#</a></h3>
+<section id="creo-una-nueva-rama-y-la-empujo-tambien-al-origin-remoto">
+<h4>Creo una nueva rama y la empujo también al origin remoto<a class="headerlink" href="#creo-una-nueva-rama-y-la-empujo-tambien-al-origin-remoto" title="Enlace permanente a este encabezado">#</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gir<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>nombre_de_rama
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>nombre_de_rama
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="dudas-problemas-tecnicos-y-soluciones">
+<h2>Dudas, problemas técnicos y soluciones<a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para compartir con nosotros y con el resto de participantes las dudas,
+problemas, sugerencias o soluciones, que pudieras tener sobre el uso de
+Git y esta sección, te proponemos usar la siguiente discusión en este
+repositorio:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/uibcdf/Taller-Python/discussions/6">Foro técnico sobre Git</a></p></li>
+</ul>
+</section>
+<section id="mas-recursos-utiles">
+<h2>Más recursos útiles<a class="headerlink" href="#mas-recursos-utiles" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Esta web era sólo una guia introductoria. No es funcional documentarse o
+estudiar mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
+manera más solida si con el uso te van surgiendo necesidades a las que vas
+dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más
+información útil en los siguientes listados.</p>
+<section id="documentacion">
+<h3>Documentación<a class="headerlink" href="#documentacion" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Compartimos en esta sección la documentación oficial de la herramienta:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/docs">Git</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/book/es">Pro Git Book (español)</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/book/en">Pro Git Book (inglés)</a></p></li>
+</ul>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos">
+<h3>Tutoriales, Webinars y cursos gratuitos<a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Aquí encontrarás una lista de tutoriales, videos o cursos gratuitos que puedes
+visitar para aprender más sobre Git.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/es/get-started/getting-started-with-git">Git desde GitHub</a></p></li>
+<li><p><a class="reference external" href="http://rogerdudler.github.io/git-guide/index.es.html">La guia sencilla</a></p></li>
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice-es/">Software Carpentry - El controlador de versiones con Git</a></p></li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials">Atlassian Git Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://jahya.net/blog/git-vs-github/">Git vs. GitHub</a></p></li>
+<li><p><a class="reference external" href="https://www.git-tower.com/learn/">Git-Tower Learn</a></p></li>
+<li><p><a class="reference external" href="https://education.molssi.org/python-package-best-practices/00-git-and-github.html">MOLSSI Git and GitHub</a></p></li>
+<li><p><a class="reference external" href="https://www.coursera.org/learn/git-espanol">Coursera: Git</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../conda/conda.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Conda</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../github/github.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">GitHub</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-git">¿Qué es Git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala">¿Cómo se instala?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-linux">Git en Linux</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-macos">Git en macOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-en-windows">Git en Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-usa">¿Cómo se usa?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-controlador-de-versiones-local-y-personal">Como controlador de versiones local y personal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-servidor-remoto-central-de-git">Como servidor remoto central de git</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#en-un-servidor-tuyo">En un servidor tuyo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-nube">En la nube</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breve-compendio-de-los-comandos-mas-utiles">Breve compendio de los comandos más útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#listado-de-ramas">Listado de ramas</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cambio-de-rama">Cambio de rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#listado-de-ramas-y-commits">Listado de ramas y commits</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-nueva-rama">Creación de nueva rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-una-rama">Eliminación de una rama</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-del-clon-local-de-un-una-nueva-rama-remota">Creación del clon local de un una nueva rama remota</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compendio-de-las-rutinas-mas-utiles">Compendio de las rutinas más útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creo-una-nueva-rama-y-la-empujo-tambien-al-origin-remoto">Creo una nueva rama y la empujo también al origin remoto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones">Dudas, problemas técnicos y soluciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles">Más recursos útiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos">Tutoriales, Webinars y cursos gratuitos</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
